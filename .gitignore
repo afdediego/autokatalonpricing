@@ -1,0 +1,19 @@
+# Ignorar carpetas temporales y de compilación
+bin/
+Libs/
+.settings/
+
+# Ignorar reportes y archivos de prueba generados
+Reports/
+*.log
+
+# Ignorar configuraciones específicas del entorno
+.classpath
+.project
+.idea/
+.vscode/
+
+# Ignorar otros archivos generados automáticamente
+*.tmp
+*.apk
+*.ipa
