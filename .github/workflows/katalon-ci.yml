@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-katalon-tests:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       # Paso 1: Clonar el repositorio
