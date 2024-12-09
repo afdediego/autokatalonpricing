@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PRICING-Test Plan Regresión Core" time="301.14" tests="11" failures="0" errors="0">
+   <testsuite name="PRICING-Test Plan Regresión Core" tests="11" failures="0" errors="0" time="301.14" skipped="0" timestamp="25-03-2024T18:19:02" hostname="afernandezd - localhost" id="Test Suites/PRICING-Test Plan Regresión Core">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900"/>
+         <property name="logFiles" value="/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/execution0.log"/>
+         <property name="attachments" value="/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/1711387218055.png, /Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2167, /Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2244, /Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P25-2246, /Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2173, /Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P25-2248, /Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2175, /Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2175"/>
+         <property name="hostName" value="afernandezd - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.3.1.212"/>
+         <property name="browser" value="Chrome 123.0.0.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="5101d8c5ac6f536c74c7f12717bf9429"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-user" time="14.334" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-user" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:19:02 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-user: Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-user
+
+25-03-2024T18:19:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:19:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:19:03 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:19:04 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:19:04 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:19:11 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:19:11 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:19:11 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:19:11 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "anio.diego"): Text 'anio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:19:13 - [MESSAGE][PASSED] - Text 'anio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:19:13 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:19:13 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:19:13 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:19:14 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:19:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:19:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:19:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials' is present
+
+25-03-2024T18:19:16 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials' is present
+
+25-03-2024T18:19:16 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials' is visible
+
+25-03-2024T18:19:17 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials' is visible
+
+25-03-2024T18:19:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:19:17 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-pass" time="19.689" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-pass" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:19:17 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-pass: Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-pass
+
+25-03-2024T18:19:17 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:19:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:19:17 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:19:17 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:19:17 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:19:31 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:19:31 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:19:31 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:19:31 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:19:33 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:19:33 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "y3nGvd+W12k="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:19:33 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:19:33 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:19:34 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:19:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:19:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:19:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials' is present
+
+25-03-2024T18:19:36 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials' is present
+
+25-03-2024T18:19:36 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials' is visible
+
+25-03-2024T18:19:36 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/div_Invalid credentials' is visible
+
+25-03-2024T18:19:36 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:19:36 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-OK" time="20.511" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-OK" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:19:36 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-OK: Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-OK
+
+25-03-2024T18:19:36 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:19:36 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:19:36 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:19:37 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:19:37 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:19:51 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:19:51 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:19:52 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:19:52 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:19:53 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:19:53 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:19:53 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:19:53 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:19:54 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:19:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:19:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:19:56 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/img"), 0): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:19:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+25-03-2024T18:19:57 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:19:57 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img")): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:19:57 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:19:57 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:19:57 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-2163-PRODUCTOS-VisualizarProductos" time="21.101" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-2163-PRODUCTOS-VisualizarProductos" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:19:57 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-2163-PRODUCTOS-VisualizarProductos: Test Cases/PRICING-Test Plan Regresión Core/P25-2163-PRODUCTOS-VisualizarProductos
+
+25-03-2024T18:19:57 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:19:57 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:19:57 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:19:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:19:58 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:20:03 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:20:03 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:20:04 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:20:04 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:20:05 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:20:05 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:20:05 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:20:05 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:20:06 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:20:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:20:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:20:08 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/img"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:20:09 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:20:09 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img")): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:20:09 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:20:09 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is visible
+
+25-03-2024T18:20:09 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is visible
+
+25-03-2024T18:20:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is clicked on
+
+25-03-2024T18:20:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is clicked on
+
+25-03-2024T18:20:10 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is visible
+
+25-03-2024T18:20:10 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is visible
+
+25-03-2024T18:20:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is clicked on
+
+25-03-2024T18:20:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is clicked on
+
+25-03-2024T18:20:10 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is visible
+
+25-03-2024T18:20:11 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is visible
+
+25-03-2024T18:20:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar"), STOP_ON_FAILURE): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is clicked on
+
+25-03-2024T18:20:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is clicked on
+
+25-03-2024T18:20:13 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo' is not visible after 3 second(s)
+
+25-03-2024T18:20:17 - [MESSAGE][WARNING] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo' is not visible after 3 second(s)
+
+25-03-2024T18:20:17 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+25-03-2024T18:20:18 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/1711387218055.png]]
+
+25-03-2024T18:20:18 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo' is present
+
+25-03-2024T18:20:18 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo' is present
+
+25-03-2024T18:20:18 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:20:18 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/KO-P25-2167-PRODUCTOS-Visualizar productos-Ver Histórico" time="29.451" classname="Test Cases/PRICING-Test Plan Regresión Core/KO-P25-2167-PRODUCTOS-Visualizar productos-Ver Histórico" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:20:18 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/KO-P25-2167-PRODUCTOS-Visualizar productos-Ver Histórico: Test Cases/PRICING-Test Plan Regresión Core/KO-P25-2167-PRODUCTOS-Visualizar productos-Ver Histórico
+
+25-03-2024T18:20:18 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:20:18 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:20:18 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:20:19 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:20:19 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:20:25 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:20:25 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:20:25 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:20:25 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:20:27 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:20:27 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:20:27 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:20:27 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:20:28 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:20:28 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:20:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:20:29 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/img"), 8): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:20:30 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:20:30 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS"), 8): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is visible
+
+25-03-2024T18:20:31 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is visible
+
+25-03-2024T18:20:31 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is clicked on
+
+25-03-2024T18:20:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is clicked on
+
+25-03-2024T18:20:31 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto"), 8): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is visible
+
+25-03-2024T18:20:31 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is visible
+
+25-03-2024T18:20:31 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is clicked on
+
+25-03-2024T18:20:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is clicked on
+
+25-03-2024T18:20:32 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar"), 8): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is visible
+
+25-03-2024T18:20:32 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is visible
+
+25-03-2024T18:20:32 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is clicked on
+
+25-03-2024T18:20:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is clicked on
+
+25-03-2024T18:20:34 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo"), 6): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo' is present
+
+25-03-2024T18:20:35 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo' is present
+
+25-03-2024T18:20:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones"), 6): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones' is present
+
+25-03-2024T18:20:42 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: id("kt_content")/div[@id="app"]/div[@class="kt-portlet kt-portlet--bordered"]/div[@class="kt-portlet__body"]/div[@class="kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--loaded"]/div[@class="bootstrap-table bootstrap4"]/div[@class="fixed-table-container"]/div[@class="fixed-table-body"]/table[@class="table table-bordered table-hover"]/thead[1]/tr[1]/th[7]/div[@class="th-inner"][count(. | //div[@class = 'th-inner ' and (text() = 'Opciones' or . = 'Opciones')]) = count(//div[@class = 'th-inner ' and (text() = 'Opciones' or . = 'Opciones')])]'. Please recheck the objects properties to make sure the desired element is located. 
+
+25-03-2024T18:20:42 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones'. Try using Self-healing.
+
+25-03-2024T18:20:42 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones' was broken. Propose an alternative one: '//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[7]/div'.
+
+25-03-2024T18:20:42 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones' is present
+
+25-03-2024T18:20:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/button_Filtros"), 6): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/button_Filtros' is present
+
+25-03-2024T18:20:42 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/button_Filtros' is present
+
+25-03-2024T18:20:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconHistorico"), 0): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconHistorico' is present
+
+25-03-2024T18:20:42 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+25-03-2024T18:20:43 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconHistorico' is present
+
+25-03-2024T18:20:43 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconHistorico")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconHistorico' is double clicked on
+
+25-03-2024T18:20:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconHistorico' is double clicked on
+
+25-03-2024T18:20:43 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h5_Histrico de producto"), 4): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h5_Histrico de producto' is present
+
+25-03-2024T18:20:44 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h5_Histrico de producto' is present
+
+25-03-2024T18:20:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoHist"), 4): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoHist' is present
+
+25-03-2024T18:20:44 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoHist' is present
+
+25-03-2024T18:20:44 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoHist")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoHist' is double clicked on
+
+25-03-2024T18:20:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoHist' is double clicked on
+
+25-03-2024T18:20:46 - [TEST_STEP][PASSED] - takeScreenshot("P-25-2167"): Taking screenshot successfully
+
+25-03-2024T18:20:47 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2167]]
+
+25-03-2024T18:20:47 - [TEST_STEP][PASSED] - comment(""): 
+
+25-03-2024T18:20:47 - [MESSAGE][INFO] - 
+
+25-03-2024T18:20:47 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:20:47 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-2244-PRODUCTOS-Visualizar productos-Ver detalle" time="29.852" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-2244-PRODUCTOS-Visualizar productos-Ver detalle" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:20:47 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-2244-PRODUCTOS-Visualizar productos-Ver detalle: Test Cases/PRICING-Test Plan Regresión Core/P25-2244-PRODUCTOS-Visualizar productos-Ver detalle
+
+25-03-2024T18:20:47 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:20:47 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:20:47 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:20:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:20:48 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:20:55 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:20:55 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:20:55 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:20:55 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:20:57 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:20:57 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:20:57 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:20:57 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:20:58 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:20:58 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:21:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:21:00 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/img"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:21:01 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:21:01 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is visible
+
+25-03-2024T18:21:01 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is visible
+
+25-03-2024T18:21:01 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is clicked on
+
+25-03-2024T18:21:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is clicked on
+
+25-03-2024T18:21:01 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is visible
+
+25-03-2024T18:21:02 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is visible
+
+25-03-2024T18:21:02 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is clicked on
+
+25-03-2024T18:21:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Producto' is clicked on
+
+25-03-2024T18:21:02 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is visible
+
+25-03-2024T18:21:03 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is visible
+
+25-03-2024T18:21:03 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is clicked on
+
+25-03-2024T18:21:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar' is clicked on
+
+25-03-2024T18:21:05 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo' is present
+
+25-03-2024T18:21:06 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Cdigo' is present
+
+25-03-2024T18:21:06 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones' is present
+
+25-03-2024T18:21:12 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: id("kt_content")/div[@id="app"]/div[@class="kt-portlet kt-portlet--bordered"]/div[@class="kt-portlet__body"]/div[@class="kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--loaded"]/div[@class="bootstrap-table bootstrap4"]/div[@class="fixed-table-container"]/div[@class="fixed-table-body"]/table[@class="table table-bordered table-hover"]/thead[1]/tr[1]/th[7]/div[@class="th-inner"][count(. | //div[@class = 'th-inner ' and (text() = 'Opciones' or . = 'Opciones')]) = count(//div[@class = 'th-inner ' and (text() = 'Opciones' or . = 'Opciones')])]'. Please recheck the objects properties to make sure the desired element is located. 
+
+25-03-2024T18:21:12 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones'. Try using Self-healing.
+
+25-03-2024T18:21:12 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones' was broken. Propose an alternative one: '//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[7]/div'.
+
+25-03-2024T18:21:12 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones' is present
+
+25-03-2024T18:21:12 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/button_Filtros"), 6): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/button_Filtros' is present
+
+25-03-2024T18:21:12 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/button_Filtros' is present
+
+25-03-2024T18:21:12 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoProduct"), 4): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoProduct' is present
+
+25-03-2024T18:21:13 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoProduct' is present
+
+25-03-2024T18:21:13 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoProduct")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoProduct' is double clicked on
+
+25-03-2024T18:21:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/IconoOjoProduct' is double clicked on
+
+25-03-2024T18:21:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h3_Mostrar Producto"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h3_Mostrar Producto' is present
+
+25-03-2024T18:21:17 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h3_Mostrar Producto' is present
+
+25-03-2024T18:21:17 - [TEST_STEP][PASSED] - takeScreenshot("P-25-2244"): Taking screenshot successfully
+
+25-03-2024T18:21:17 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2244]]
+
+25-03-2024T18:21:17 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/ExpandDatosBasicosProduct")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/ExpandDatosBasicosProduct' is clicked on
+
+25-03-2024T18:21:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/ExpandDatosBasicosProduct' is clicked on
+
+25-03-2024T18:21:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:21:17 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-2246-PRODUCTOS-Visualizar tarifa de producto" time="27.271" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-2246-PRODUCTOS-Visualizar tarifa de producto" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:21:17 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-2246-PRODUCTOS-Visualizar tarifa de producto: Test Cases/PRICING-Test Plan Regresión Core/P25-2246-PRODUCTOS-Visualizar tarifa de producto
+
+25-03-2024T18:21:17 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:21:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:21:17 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:21:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:21:18 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:21:24 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:21:24 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:21:24 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:21:24 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:21:26 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:21:26 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:21:26 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:21:26 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:21:27 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:21:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:21:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:21:29 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/img"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:21:30 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:21:30 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img")): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:21:31 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:21:31 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is visible
+
+25-03-2024T18:21:31 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is visible
+
+25-03-2024T18:21:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is clicked on
+
+25-03-2024T18:21:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_PRODUCTOS' is clicked on
+
+25-03-2024T18:21:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Tarifas")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Tarifas' is clicked on
+
+25-03-2024T18:21:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Tarifas' is clicked on
+
+25-03-2024T18:21:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar_tarifas"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar_tarifas' is present
+
+25-03-2024T18:21:32 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar_tarifas' is present
+
+25-03-2024T18:21:32 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar_tarifas")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar_tarifas' is double clicked on
+
+25-03-2024T18:21:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/span_Visualizar_tarifas' is double clicked on
+
+25-03-2024T18:21:34 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye' is not present after 3 second(s)
+
+25-03-2024T18:21:38 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: id("kt_content")/div[@id="app"]/div[@class="kt-portlet kt-portlet--bordered"]/div[@class="kt-portlet__body"]/div[@class="kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--loaded"]/div[@class="bootstrap-table bootstrap4"]/div[@class="fixed-table-container"]/div[@class="fixed-table-body"]/table[@class="table table-bordered table-hover"]/tbody[1]/tr[1]/td[9]/a[@class="btn btn-sm btn-clean btn-icon btn-icon-md eye"]/i[@class="flaticon-eye"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+25-03-2024T18:21:38 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye'. Try using Self-healing.
+
+25-03-2024T18:21:40 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr/td[9]/a/i'. Please recheck the objects properties to make sure the desired element is located. 
+
+25-03-2024T18:21:40 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr/td[9]/a/i'.
+
+25-03-2024T18:21:40 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//td[9]/a/i'.
+
+25-03-2024T18:21:40 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr/td[9]/a/i'.
+
+25-03-2024T18:21:40 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//td[9]/a/i'.
+
+25-03-2024T18:21:41 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr/td[9]/a/i'.
+
+25-03-2024T18:21:41 - [MESSAGE][INFO] - [SELF-HEALING] Failed Locator: '//td[9]/a/i'.
+
+25-03-2024T18:21:43 - [MESSAGE][INFO] - Unable to find the element located by 'By.cssSelector: i.flaticon-eye'. Please recheck the objects properties to make sure the desired element is located. 
+
+25-03-2024T18:21:43 - [MESSAGE][WARNING] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye' is not present after 3 second(s)
+
+25-03-2024T18:21:43 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:21:43 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:21:43 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Nombre interno"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Nombre interno' is present
+
+25-03-2024T18:21:43 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Nombre interno' is present
+
+25-03-2024T18:21:43 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/button_Filtros"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/button_Filtros' is present
+
+25-03-2024T18:21:44 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/button_Filtros' is present
+
+25-03-2024T18:21:44 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Nombre interno"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Nombre interno' is present
+
+25-03-2024T18:21:44 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Nombre interno' is present
+
+25-03-2024T18:21:44 - [TEST_STEP][PASSED] - takeScreenshot("P25-2246"): Taking screenshot successfully
+
+25-03-2024T18:21:44 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P25-2246]]
+
+25-03-2024T18:21:44 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 3): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:21:44 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:21:44 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:21:45 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-2173-COMPLEMENTOS-Visualizar Hoja Detalle de complemento" time="63.623" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-2173-COMPLEMENTOS-Visualizar Hoja Detalle de complemento" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:21:45 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-2173-COMPLEMENTOS-Visualizar Hoja Detalle de complemento: Test Cases/PRICING-Test Plan Regresión Core/P25-2173-COMPLEMENTOS-Visualizar Hoja Detalle de complemento
+
+25-03-2024T18:21:45 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:21:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:21:45 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:21:45 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:21:45 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:21:52 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:21:52 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:21:52 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:21:52 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:21:54 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:21:54 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:21:54 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:21:54 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:21:55 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:21:55 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:21:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:21:57 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/img"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:21:58 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:21:58 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:21:58 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:21:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is clicked on
+
+25-03-2024T18:21:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is clicked on
+
+25-03-2024T18:21:58 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento' is present
+
+25-03-2024T18:21:59 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento' is present
+
+25-03-2024T18:21:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento' is clicked on
+
+25-03-2024T18:21:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento' is clicked on
+
+25-03-2024T18:21:59 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar' is present
+
+25-03-2024T18:22:00 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar' is present
+
+25-03-2024T18:22:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar' is clicked on
+
+25-03-2024T18:22:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar' is clicked on
+
+25-03-2024T18:22:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaDetalleComplemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaDetalleComplemento' is present
+
+25-03-2024T18:22:04 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaDetalleComplemento' is present
+
+25-03-2024T18:22:04 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaDetalleComplemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaDetalleComplemento' is present
+
+25-03-2024T18:22:04 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaDetalleComplemento' is present
+
+25-03-2024T18:22:04 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaDetalleComplemento")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaDetalleComplemento' is double clicked on
+
+25-03-2024T18:22:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaDetalleComplemento' is double clicked on
+
+25-03-2024T18:22:05 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Histrico del complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Histrico del complemento' is present
+
+25-03-2024T18:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Histrico del complemento' is present
+
+25-03-2024T18:22:06 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Histrico del complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Histrico del complemento' is present
+
+25-03-2024T18:22:06 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Histrico del complemento' is present
+
+25-03-2024T18:22:06 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/div_id Complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/div_id Complemento' is present
+
+25-03-2024T18:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/div_id Complemento' is present
+
+25-03-2024T18:22:07 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/div_id Complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/div_id Complemento' is present
+
+25-03-2024T18:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/div_id Complemento' is present
+
+25-03-2024T18:22:07 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoOjoHistoricoComplemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoOjoHistoricoComplemento' is present
+
+25-03-2024T18:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoOjoHistoricoComplemento' is present
+
+25-03-2024T18:22:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoOjoHistoricoComplemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoOjoHistoricoComplemento' is present
+
+25-03-2024T18:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoOjoHistoricoComplemento' is present
+
+25-03-2024T18:22:07 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoOjoHistoricoComplemento")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoOjoHistoricoComplemento' is clicked on
+
+25-03-2024T18:22:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoOjoHistoricoComplemento' is clicked on
+
+25-03-2024T18:22:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Versin seleccionada de complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Versin seleccionada de complemento' is present
+
+25-03-2024T18:22:08 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Versin seleccionada de complemento' is present
+
+25-03-2024T18:22:08 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Versin seleccionada de complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Versin seleccionada de complemento' is present
+
+25-03-2024T18:22:09 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h5_Versin seleccionada de complemento' is present
+
+25-03-2024T18:22:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento' is present
+
+25-03-2024T18:22:15 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@div = 'data-v-b62db878' and @class = 'modal-body' and @id = 'complementView']'. Please recheck the objects properties to make sure the desired element is located. 
+
+25-03-2024T18:22:15 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento'. Try using Self-healing.
+
+25-03-2024T18:22:15 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento' was broken. Propose an alternative one: '//div[@id='modal-version-complement']/div/div/div[2]'.
+
+25-03-2024T18:22:15 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento' is present
+
+25-03-2024T18:22:15 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento"), STOP_ON_FAILURE): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento' is visible
+
+25-03-2024T18:22:46 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@div = 'data-v-b62db878' and @class = 'modal-body' and @id = 'complementView']'. Please recheck the objects properties to make sure the desired element is located. 
+
+25-03-2024T18:22:46 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento'. Try using Self-healing.
+
+25-03-2024T18:22:46 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento' was broken. Propose an alternative one: '//div[@id='modal-version-complement']/div/div/div[2]'.
+
+25-03-2024T18:22:47 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/modalBodyInfoComplemento' is visible
+
+25-03-2024T18:22:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_cerrarX")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_cerrarX' is clicked on
+
+25-03-2024T18:22:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_cerrarX' is clicked on
+
+25-03-2024T18:22:47 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:22:47 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:22:48 - [TEST_STEP][PASSED] - takeScreenshot("P-25-2173"): Taking screenshot successfully
+
+25-03-2024T18:22:48 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2173]]
+
+25-03-2024T18:22:48 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:22:48 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:22:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:22:48 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-2248-COMPLEMENTOS-Visualizar Detalle de complemento" time="25.693" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-2248-COMPLEMENTOS-Visualizar Detalle de complemento" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:22:48 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-2248-COMPLEMENTOS-Visualizar Detalle de complemento: Test Cases/PRICING-Test Plan Regresión Core/P25-2248-COMPLEMENTOS-Visualizar Detalle de complemento
+
+25-03-2024T18:22:48 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:22:48 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:22:48 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:22:49 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:22:49 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:22:55 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:22:55 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:22:55 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:22:55 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:22:57 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:22:57 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:22:58 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:22:58 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:22:58 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:22:58 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:23:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:23:00 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/img"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:23:01 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:23:01 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img")): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:23:01 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:23:01 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:02 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is clicked on
+
+25-03-2024T18:23:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is clicked on
+
+25-03-2024T18:23:02 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento' is present
+
+25-03-2024T18:23:02 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento' is present
+
+25-03-2024T18:23:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento' is clicked on
+
+25-03-2024T18:23:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Complemento' is clicked on
+
+25-03-2024T18:23:02 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar' is present
+
+25-03-2024T18:23:03 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar' is present
+
+25-03-2024T18:23:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar' is clicked on
+
+25-03-2024T18:23:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificarclonar' is clicked on
+
+25-03-2024T18:23:05 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable' is present
+
+25-03-2024T18:23:06 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable' is present
+
+25-03-2024T18:23:06 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable' is present
+
+25-03-2024T18:23:06 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable' is present
+
+25-03-2024T18:23:06 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye' is present
+
+25-03-2024T18:23:06 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye' is present
+
+25-03-2024T18:23:06 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye' is present
+
+25-03-2024T18:23:07 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye' is present
+
+25-03-2024T18:23:07 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye' is double clicked on
+
+25-03-2024T18:23:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/i_active_flaticon-eye' is double clicked on
+
+25-03-2024T18:23:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h3_Complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h3_Complemento' is present
+
+25-03-2024T18:23:09 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h3_Complemento' is present
+
+25-03-2024T18:23:09 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h3_Complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h3_Complemento' is present
+
+25-03-2024T18:23:10 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/h3_Complemento' is present
+
+25-03-2024T18:23:10 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado' is present
+
+25-03-2024T18:23:10 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado' is present
+
+25-03-2024T18:23:10 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado' is present
+
+25-03-2024T18:23:10 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado' is present
+
+25-03-2024T18:23:10 - [TEST_STEP][PASSED] - focus(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado' is focused
+
+25-03-2024T18:23:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado' is focused
+
+25-03-2024T18:23:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado' is clicked on
+
+25-03-2024T18:23:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/a_Ir al listado' is clicked on
+
+25-03-2024T18:23:12 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:13 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:13 - [TEST_STEP][PASSED] - takeScreenshot("P25-2248"): Taking screenshot successfully
+
+25-03-2024T18:23:14 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P25-2248]]
+
+25-03-2024T18:23:14 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:14 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:23:14 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-2175-COMPLEMENTOS-Visualizar tarifa de complementos" time="22.295" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-2175-COMPLEMENTOS-Visualizar tarifa de complementos" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:23:14 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-2175-COMPLEMENTOS-Visualizar tarifa de complementos: Test Cases/PRICING-Test Plan Regresión Core/P25-2175-COMPLEMENTOS-Visualizar tarifa de complementos
+
+25-03-2024T18:23:14 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:23:14 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:23:14 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:23:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:23:14 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:23:24 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:23:24 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:23:24 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:23:24 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:23:25 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:23:25 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:23:25 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:23:25 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:23:26 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:23:26 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:23:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:23:29 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/img"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:23:30 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:23:30 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:30 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:30 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:30 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:30 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is clicked on
+
+25-03-2024T18:23:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is clicked on
+
+25-03-2024T18:23:30 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is present
+
+25-03-2024T18:23:31 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is present
+
+25-03-2024T18:23:31 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is present
+
+25-03-2024T18:23:31 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is present
+
+25-03-2024T18:23:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is clicked on
+
+25-03-2024T18:23:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is clicked on
+
+25-03-2024T18:23:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is present
+
+25-03-2024T18:23:32 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is present
+
+25-03-2024T18:23:32 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is present
+
+25-03-2024T18:23:32 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is present
+
+25-03-2024T18:23:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is clicked on
+
+25-03-2024T18:23:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is clicked on
+
+25-03-2024T18:23:34 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:35 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:35 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:35 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:35 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros' is present
+
+25-03-2024T18:23:35 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros' is present
+
+25-03-2024T18:23:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable' is present
+
+25-03-2024T18:23:36 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable' is present
+
+25-03-2024T18:23:36 - [TEST_STEP][PASSED] - takeScreenshot("P-25-2175"): Taking screenshot successfully
+
+25-03-2024T18:23:36 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2175]]
+
+25-03-2024T18:23:36 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros' is present
+
+25-03-2024T18:23:36 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros' is present
+
+25-03-2024T18:23:36 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:23:36 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/PRICING-Test Plan Regresión Core/P25-2177-COMPLEMENTOS-Clonar tarifa de complementos-Cancelar" time="27.255" classname="Test Cases/PRICING-Test Plan Regresión Core/P25-2177-COMPLEMENTOS-Clonar tarifa de complementos-Cancelar" status="PASSED">
+         <system-out><![CDATA[25-03-2024T18:23:36 - [TEST_CASE][PASSED] - Test Cases/PRICING-Test Plan Regresión Core/P25-2177-COMPLEMENTOS-Clonar tarifa de complementos-Cancelar: Test Cases/PRICING-Test Plan Regresión Core/P25-2177-COMPLEMENTOS-Clonar tarifa de complementos-Cancelar
+
+25-03-2024T18:23:36 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+25-03-2024T18:23:36 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+25-03-2024T18:23:36 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+25-03-2024T18:23:37 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+25-03-2024T18:23:37 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:23:38 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+25-03-2024T18:23:38 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+25-03-2024T18:23:44 - [MESSAGE][PASSED] - Current window maximized
+
+25-03-2024T18:23:44 - [TEST_STEP][PASSED] - setText(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:23:46 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username'
+
+25-03-2024T18:23:46 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:23:46 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__password'
+
+25-03-2024T18:23:46 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:23:47 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+25-03-2024T18:23:47 - [TEST_STEP][PASSED] - click(findTestObject("Pricing-Test Plan Regresión Core/Page_Login/button_Login")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:23:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Login/button_Login' is clicked on
+
+25-03-2024T18:23:48 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Pricing-Test Plan Regresión Core/Page_PRICING/img"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:23:49 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_PRICING/img' is visible
+
+25-03-2024T18:23:49 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:50 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:50 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:50 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is present
+
+25-03-2024T18:23:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is clicked on
+
+25-03-2024T18:23:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_COMPLEMENTOS' is clicked on
+
+25-03-2024T18:23:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is present
+
+25-03-2024T18:23:50 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is present
+
+25-03-2024T18:23:50 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is present
+
+25-03-2024T18:23:51 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is present
+
+25-03-2024T18:23:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is clicked on
+
+25-03-2024T18:23:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Tarifa de complemento' is clicked on
+
+25-03-2024T18:23:51 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is present
+
+25-03-2024T18:23:51 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is present
+
+25-03-2024T18:23:51 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is present
+
+25-03-2024T18:23:52 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is present
+
+25-03-2024T18:23:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is clicked on
+
+25-03-2024T18:23:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/span_Visualizarmodificar' is clicked on
+
+25-03-2024T18:23:53 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:54 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:54 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:54 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/h1_Registros totales' is present
+
+25-03-2024T18:23:54 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros' is present
+
+25-03-2024T18:23:54 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros' is present
+
+25-03-2024T18:23:54 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable' is present
+
+25-03-2024T18:23:55 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/Button_Filtros_Desplegable' is present
+
+25-03-2024T18:23:55 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros' is present
+
+25-03-2024T18:23:55 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_Filtros' is present
+
+25-03-2024T18:23:55 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaClonarComplemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaClonarComplemento' is present
+
+25-03-2024T18:23:55 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaClonarComplemento' is present
+
+25-03-2024T18:23:55 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaClonarComplemento"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaClonarComplemento' is present
+
+25-03-2024T18:23:55 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaClonarComplemento' is present
+
+25-03-2024T18:23:55 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaClonarComplemento")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaClonarComplemento' is double clicked on
+
+25-03-2024T18:24:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/IconoHojaClonarComplemento' is double clicked on
+
+25-03-2024T18:24:01 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_CancelarClonar"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_CancelarClonar' is present
+
+25-03-2024T18:24:01 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_CancelarClonar' is present
+
+25-03-2024T18:24:01 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_CancelarClonar"), 5): Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_CancelarClonar' is present
+
+25-03-2024T18:24:01 - [MESSAGE][PASSED] - Object 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_CancelarClonar' is present
+
+25-03-2024T18:24:01 - [TEST_STEP][PASSED] - takeScreenshot("P-25-2175"): Taking screenshot successfully
+
+25-03-2024T18:24:02 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240325_181859/PRICING-Test Plan Regresi\u00F3n Core/20240325_181900/P-25-2175]]
+
+25-03-2024T18:24:02 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_CancelarClonar")): Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_CancelarClonar' is double clicked on
+
+25-03-2024T18:24:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar COMPLEMENTOS/button_CancelarClonar' is double clicked on
+
+25-03-2024T18:24:03 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+25-03-2024T18:24:03 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[25-03-2024T18:19:02 - [TEST_SUITE][PASSED] - PRICING-Test Plan Regresión Core: Test Cases/PRICING-Test Plan Regresión Core/P25-2177-COMPLEMENTOS-Clonar tarifa de complementos-Cancelar]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

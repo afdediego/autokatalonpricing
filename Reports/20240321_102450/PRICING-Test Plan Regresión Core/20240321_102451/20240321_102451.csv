@@ -1,0 +1,131 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+PRICING-Test Plan Regresión Core,Chrome 123.0.0.0,,,21-03-2024 10:24:52,21-03-2024 10:27:58,"3m - 5,843s",PASSED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-user,Chrome 123.0.0.0,Entramos en la aplicación Pricing,Login,21-03-2024 10:24:52,21-03-2024 10:25:09,"16,097s",PASSED
+"openBrowser("""")",Chrome 123.0.0.0,,,21-03-2024 10:24:53,21-03-2024 10:24:54,"1,418s",PASSED
+"navigateToUrl(""https://pre-pricing.recordgo.cloud/login"")",Chrome 123.0.0.0,,,21-03-2024 10:24:54,21-03-2024 10:25:03,"9,122s",PASSED
+maximizeWindow(),Chrome 123.0.0.0,,,21-03-2024 10:25:03,21-03-2024 10:25:04,"0,473s",PASSED
+"setText(findTestObject(""Page_Login/input_Log in to your account__username""), ""anio.diego"")",Chrome 123.0.0.0,,,21-03-2024 10:25:04,21-03-2024 10:25:05,"1,273s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login/input_Log in to your account__password""), ""4WoE78dHD36JvULd0ZrVWg=="")",Chrome 123.0.0.0,,,21-03-2024 10:25:05,21-03-2024 10:25:05,"0,287s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Login/select_Select an option CANARY ISLAND""), ""IC"", true)",Chrome 123.0.0.0,,,21-03-2024 10:25:05,21-03-2024 10:25:06,"0,787s",PASSED
+"click(findTestObject(""Object Repository/Page_Login/button_Login""))",Chrome 123.0.0.0,,,21-03-2024 10:25:06,21-03-2024 10:25:07,"1,088s",PASSED
+"waitForElementPresent(findTestObject(""Page_Login/div_Invalid credentials""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:25:07,21-03-2024 10:25:08,"1,195s",PASSED
+"waitForElementVisible(findTestObject(""Page_Login/div_Invalid credentials""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:25:08,21-03-2024 10:25:08,"0,274s",PASSED
+closeBrowser(),Chrome 123.0.0.0,,,21-03-2024 10:25:08,21-03-2024 10:25:09,"0,093s",PASSED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-KO-pass,Chrome 123.0.0.0,Entramos en la aplicación Pricing,Login,21-03-2024 10:25:09,21-03-2024 10:25:29,"20,557s",PASSED
+"openBrowser("""")",Chrome 123.0.0.0,,,21-03-2024 10:25:09,21-03-2024 10:25:09,"0,544s",PASSED
+"navigateToUrl(""https://pre-pricing.recordgo.cloud/login"")",Chrome 123.0.0.0,,,21-03-2024 10:25:09,21-03-2024 10:25:24,"14,762s",PASSED
+maximizeWindow(),Chrome 123.0.0.0,,,21-03-2024 10:25:24,21-03-2024 10:25:24,"0,477s",PASSED
+"setText(findTestObject(""Page_Login/input_Log in to your account__username""), ""antonio.diego"")",Chrome 123.0.0.0,,,21-03-2024 10:25:24,21-03-2024 10:25:25,"1,110s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login/input_Log in to your account__password""), ""y3nGvd+W12k="")",Chrome 123.0.0.0,,,21-03-2024 10:25:25,21-03-2024 10:25:26,"0,284s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Login/select_Select an option CANARY ISLAND""), ""IC"", true)",Chrome 123.0.0.0,,,21-03-2024 10:25:26,21-03-2024 10:25:27,"0,750s",PASSED
+"click(findTestObject(""Object Repository/Page_Login/button_Login""))",Chrome 123.0.0.0,,,21-03-2024 10:25:27,21-03-2024 10:25:28,"1,071s",PASSED
+"waitForElementPresent(findTestObject(""Page_Login/div_Invalid credentials""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:25:28,21-03-2024 10:25:29,"1,192s",PASSED
+"waitForElementVisible(findTestObject(""Page_Login/div_Invalid credentials""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:25:29,21-03-2024 10:25:29,"0,251s",PASSED
+closeBrowser(),Chrome 123.0.0.0,,,21-03-2024 10:25:29,21-03-2024 10:25:29,"0,089s",PASSED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/P25-LoginPricing-OK,Chrome 123.0.0.0,Entramos en la aplicación Pricing,Login,21-03-2024 10:25:29,21-03-2024 10:25:50,"20,838s",PASSED
+"openBrowser("""")",Chrome 123.0.0.0,,,21-03-2024 10:25:29,21-03-2024 10:25:30,"0,521s",PASSED
+"navigateToUrl(""https://pre-pricing.recordgo.cloud/login"")",Chrome 123.0.0.0,,,21-03-2024 10:25:30,21-03-2024 10:25:44,"14,116s",PASSED
+maximizeWindow(),Chrome 123.0.0.0,,,21-03-2024 10:25:44,21-03-2024 10:25:44,"0,470s",PASSED
+"setText(findTestObject(""Page_Login/input_Log in to your account__username""), ""antonio.diego"")",Chrome 123.0.0.0,,,21-03-2024 10:25:44,21-03-2024 10:25:45,"1,116s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login/input_Log in to your account__password""), ""4WoE78dHD36JvULd0ZrVWg=="")",Chrome 123.0.0.0,,,21-03-2024 10:25:45,21-03-2024 10:25:46,"0,272s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Login/select_Select an option CANARY ISLAND""), ""IC"", true)",Chrome 123.0.0.0,,,21-03-2024 10:25:46,21-03-2024 10:25:46,"0,739s",PASSED
+"click(findTestObject(""Object Repository/Page_Login/button_Login""))",Chrome 123.0.0.0,,,21-03-2024 10:25:46,21-03-2024 10:25:49,"2,245s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/img""), 0)",Chrome 123.0.0.0,,,21-03-2024 10:25:49,21-03-2024 10:25:50,"0,984s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/Page_PRICING/img""))",Chrome 123.0.0.0,,,21-03-2024 10:25:50,21-03-2024 10:25:50,"0,255s",PASSED
+closeBrowser(),Chrome 123.0.0.0,,,21-03-2024 10:25:50,21-03-2024 10:25:50,"0,091s",PASSED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/P25-2163-PRODUCTOS-VisualizarProductos,Chrome 123.0.0.0,Prueba que accede a la ventana donde se visualiza el listado de productos creados,Productos,21-03-2024 10:25:50,21-03-2024 10:26:19,"29,169s",PASSED
+"openBrowser("""")",Chrome 123.0.0.0,,,21-03-2024 10:25:50,21-03-2024 10:25:51,"0,526s",PASSED
+"navigateToUrl(""https://pre-pricing.recordgo.cloud/login"")",Chrome 123.0.0.0,,,21-03-2024 10:25:51,21-03-2024 10:26:05,"14,750s",PASSED
+maximizeWindow(),Chrome 123.0.0.0,,,21-03-2024 10:26:05,21-03-2024 10:26:06,"0,501s",PASSED
+"setText(findTestObject(""Page_Login/input_Log in to your account__username""), ""antonio.diego"")",Chrome 123.0.0.0,,,21-03-2024 10:26:06,21-03-2024 10:26:07,"1,127s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login/input_Log in to your account__password""), ""4WoE78dHD36JvULd0ZrVWg=="")",Chrome 123.0.0.0,,,21-03-2024 10:26:07,21-03-2024 10:26:07,"0,270s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Login/select_Select an option CANARY ISLAND""), ""IC"", true)",Chrome 123.0.0.0,,,21-03-2024 10:26:07,21-03-2024 10:26:08,"0,757s",PASSED
+"click(findTestObject(""Object Repository/Page_Login/button_Login""))",Chrome 123.0.0.0,,,21-03-2024 10:26:08,21-03-2024 10:26:10,"2,476s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/img""), 5)",Chrome 123.0.0.0,,,21-03-2024 10:26:10,21-03-2024 10:26:11,"0,352s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/Page_PRICING/img""))",Chrome 123.0.0.0,,,21-03-2024 10:26:11,21-03-2024 10:26:11,"0,237s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_PRODUCTOS""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:26:11,21-03-2024 10:26:11,"0,244s",PASSED
+"click(findTestObject(""Object Repository/Page_PRICING/span_PRODUCTOS""))",Chrome 123.0.0.0,,,21-03-2024 10:26:11,21-03-2024 10:26:12,"0,279s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_Producto""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:26:12,21-03-2024 10:26:12,"0,467s",PASSED
+"click(findTestObject(""Object Repository/Page_PRICING/span_Producto""))",Chrome 123.0.0.0,,,21-03-2024 10:26:12,21-03-2024 10:26:12,"0,258s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_Visualizar""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:26:12,21-03-2024 10:26:13,"0,470s",PASSED
+"click(findTestObject(""Object Repository/Page_PRICING/span_Visualizar""), STOP_ON_FAILURE)",Chrome 123.0.0.0,,,21-03-2024 10:26:13,21-03-2024 10:26:15,"2,031s",PASSED
+"waitForElementVisible(findTestObject(""Page_Visualizar PRODUCTOS/div_Cdigo""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:26:15,21-03-2024 10:26:19,"4,056s",PASSED
+"verifyElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/div_Cdigo""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:26:19,21-03-2024 10:26:19,"0,239s",PASSED
+closeBrowser(),Chrome 123.0.0.0,,,21-03-2024 10:26:19,21-03-2024 10:26:19,"0,099s",PASSED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/P25-2167-PRODUCTOS-Visualizar productos-Ver Histórico,Chrome 123.0.0.0,,,21-03-2024 10:26:19,21-03-2024 10:26:57,"38,350s",PASSED
+"openBrowser("""")",Chrome 123.0.0.0,,,21-03-2024 10:26:19,21-03-2024 10:26:20,"0,552s",PASSED
+"navigateToUrl(""https://pre-pricing.recordgo.cloud/login"")",Chrome 123.0.0.0,,,21-03-2024 10:26:20,21-03-2024 10:26:34,"13,906s",PASSED
+maximizeWindow(),Chrome 123.0.0.0,,,21-03-2024 10:26:34,21-03-2024 10:26:34,"0,463s",PASSED
+"setText(findTestObject(""Page_Login/input_Log in to your account__username""), ""antonio.diego"")",Chrome 123.0.0.0,,,21-03-2024 10:26:34,21-03-2024 10:26:36,"1,545s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login/input_Log in to your account__password""), ""4WoE78dHD36JvULd0ZrVWg=="")",Chrome 123.0.0.0,,,21-03-2024 10:26:36,21-03-2024 10:26:36,"0,268s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Login/select_Select an option CANARY ISLAND""), ""IC"", true)",Chrome 123.0.0.0,,,21-03-2024 10:26:36,21-03-2024 10:26:37,"0,733s",PASSED
+"click(findTestObject(""Page_Login/button_Login""))",Chrome 123.0.0.0,,,21-03-2024 10:26:37,21-03-2024 10:26:39,"2,572s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/img""), 8)",Chrome 123.0.0.0,,,21-03-2024 10:26:39,21-03-2024 10:26:40,"1,128s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_PRODUCTOS""), 8)",Chrome 123.0.0.0,,,21-03-2024 10:26:40,21-03-2024 10:26:41,"0,253s",PASSED
+"click(findTestObject(""Page_PRICING/span_PRODUCTOS""))",Chrome 123.0.0.0,,,21-03-2024 10:26:41,21-03-2024 10:26:41,"0,262s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_Producto""), 8)",Chrome 123.0.0.0,,,21-03-2024 10:26:41,21-03-2024 10:26:41,"0,456s",PASSED
+"click(findTestObject(""Page_PRICING/span_Producto""))",Chrome 123.0.0.0,,,21-03-2024 10:26:41,21-03-2024 10:26:42,"0,259s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_Visualizar""), 8)",Chrome 123.0.0.0,,,21-03-2024 10:26:42,21-03-2024 10:26:42,"0,471s",PASSED
+"click(findTestObject(""Page_PRICING/span_Visualizar""))",Chrome 123.0.0.0,,,21-03-2024 10:26:42,21-03-2024 10:26:45,"3,378s",PASSED
+"waitForElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/div_Cdigo""), 6)",Chrome 123.0.0.0,,,21-03-2024 10:26:45,21-03-2024 10:26:46,"0,474s",PASSED
+"waitForElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/div_Opciones""), 6)",Chrome 123.0.0.0,,,21-03-2024 10:26:46,21-03-2024 10:26:53,"7,284s",PASSED
+"waitForElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/button_Filtros""), 6)",Chrome 123.0.0.0,,,21-03-2024 10:26:53,21-03-2024 10:26:53,"0,246s",PASSED
+"waitForElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/IconHistorico""), 0)",Chrome 123.0.0.0,,,21-03-2024 10:26:53,21-03-2024 10:26:54,"0,248s",PASSED
+"doubleClick(findTestObject(""Page_Visualizar PRODUCTOS/IconHistorico""))",Chrome 123.0.0.0,,,21-03-2024 10:26:54,21-03-2024 10:26:54,"0,384s",PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Page_Visualizar PRODUCTOS/h5_Histrico de producto""), 4)",Chrome 123.0.0.0,,,21-03-2024 10:26:54,21-03-2024 10:26:55,"0,876s",PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Page_Visualizar PRODUCTOS/IconoOjoHist""), 4)",Chrome 123.0.0.0,,,21-03-2024 10:26:55,21-03-2024 10:26:55,"0,246s",PASSED
+"doubleClick(findTestObject(""Object Repository/Page_Visualizar PRODUCTOS/IconoOjoHist""))",Chrome 123.0.0.0,,,21-03-2024 10:26:55,21-03-2024 10:26:57,"2,199s",PASSED
+"comment("""")",Chrome 123.0.0.0,,,21-03-2024 10:26:57,21-03-2024 10:26:57,"0,009s",PASSED
+closeBrowser(),Chrome 123.0.0.0,,,21-03-2024 10:26:57,21-03-2024 10:26:57,"0,101s",PASSED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/P25-2244-PRODUCTOS-Visualizar productos-Ver detalle,Chrome 123.0.0.0,,,21-03-2024 10:26:57,21-03-2024 10:27:39,"41,563s",PASSED
+"openBrowser("""")",Chrome 123.0.0.0,,,21-03-2024 10:26:58,21-03-2024 10:26:58,"0,538s",PASSED
+"navigateToUrl(""https://pre-pricing.recordgo.cloud/login"")",Chrome 123.0.0.0,,,21-03-2024 10:26:58,21-03-2024 10:27:14,"16,160s",PASSED
+maximizeWindow(),Chrome 123.0.0.0,,,21-03-2024 10:27:14,21-03-2024 10:27:15,"0,458s",PASSED
+"setText(findTestObject(""Page_Login/input_Log in to your account__username""), ""antonio.diego"")",Chrome 123.0.0.0,,,21-03-2024 10:27:15,21-03-2024 10:27:16,"1,115s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login/input_Log in to your account__password""), ""4WoE78dHD36JvULd0ZrVWg=="")",Chrome 123.0.0.0,,,21-03-2024 10:27:16,21-03-2024 10:27:16,"0,266s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Login/select_Select an option CANARY ISLAND""), ""IC"", true)",Chrome 123.0.0.0,,,21-03-2024 10:27:16,21-03-2024 10:27:17,"0,735s",PASSED
+"click(findTestObject(""Page_Login/button_Login""))",Chrome 123.0.0.0,,,21-03-2024 10:27:17,21-03-2024 10:27:19,"2,423s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/img""), 5)",Chrome 123.0.0.0,,,21-03-2024 10:27:19,21-03-2024 10:27:20,"0,897s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_PRODUCTOS""), 5)",Chrome 123.0.0.0,,,21-03-2024 10:27:20,21-03-2024 10:27:20,"0,244s",PASSED
+"click(findTestObject(""Page_PRICING/span_PRODUCTOS""))",Chrome 123.0.0.0,,,21-03-2024 10:27:20,21-03-2024 10:27:21,"0,269s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_Producto""), 5)",Chrome 123.0.0.0,,,21-03-2024 10:27:21,21-03-2024 10:27:21,"0,467s",PASSED
+"click(findTestObject(""Page_PRICING/span_Producto""))",Chrome 123.0.0.0,,,21-03-2024 10:27:21,21-03-2024 10:27:21,"0,249s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_Visualizar""), 5)",Chrome 123.0.0.0,,,21-03-2024 10:27:21,21-03-2024 10:27:22,"0,464s",PASSED
+"click(findTestObject(""Page_PRICING/span_Visualizar""))",Chrome 123.0.0.0,,,21-03-2024 10:27:22,21-03-2024 10:27:23,"1,411s",PASSED
+"waitForElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/div_Cdigo""), 5)",Chrome 123.0.0.0,,,21-03-2024 10:27:23,21-03-2024 10:27:24,"1,089s",PASSED
+"waitForElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/div_Opciones""), 5)",Chrome 123.0.0.0,,,21-03-2024 10:27:24,21-03-2024 10:27:31,"6,289s",PASSED
+"waitForElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/button_Filtros""), 6)",Chrome 123.0.0.0,,,21-03-2024 10:27:31,21-03-2024 10:27:31,"0,242s",PASSED
+"waitForElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/IconoOjoProduct""), 4)",Chrome 123.0.0.0,,,21-03-2024 10:27:31,21-03-2024 10:27:31,"0,239s",PASSED
+"doubleClick(findTestObject(""Page_Visualizar PRODUCTOS/IconoOjoProduct""))",Chrome 123.0.0.0,,,21-03-2024 10:27:31,21-03-2024 10:27:37,"6,209s",PASSED
+"waitForElementPresent(findTestObject(""Page_Visualizar PRODUCTOS/h3_Mostrar Producto""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:27:37,21-03-2024 10:27:39,"1,328s",PASSED
+"click(findTestObject(""Page_Visualizar PRODUCTOS/ExpandDatosBasicosProduct""))",Chrome 123.0.0.0,,,21-03-2024 10:27:39,21-03-2024 10:27:39,"0,288s",PASSED
+closeBrowser(),Chrome 123.0.0.0,,,21-03-2024 10:27:39,21-03-2024 10:27:39,"0,139s",PASSED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/P25-2246-PRODUCTOS-Visualizar tarifa de producto,Chrome 123.0.0.0,Prueba que accede a la ventana donde se visualiza el listado de productos creados,Productos,21-03-2024 10:27:39,21-03-2024 10:27:58,"19,202s",PASSED
+"openBrowser("""")",Chrome 123.0.0.0,,,21-03-2024 10:27:39,21-03-2024 10:27:40,"0,735s",PASSED
+"navigateToUrl(""https://pre-pricing.recordgo.cloud/login"")",Chrome 123.0.0.0,,,21-03-2024 10:27:40,21-03-2024 10:27:47,"7,037s",PASSED
+maximizeWindow(),Chrome 123.0.0.0,,,21-03-2024 10:27:47,21-03-2024 10:27:47,"0,464s",PASSED
+"setText(findTestObject(""Page_Login/input_Log in to your account__username""), ""antonio.diego"")",Chrome 123.0.0.0,,,21-03-2024 10:27:47,21-03-2024 10:27:48,"1,130s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login/input_Log in to your account__password""), ""4WoE78dHD36JvULd0ZrVWg=="")",Chrome 123.0.0.0,,,21-03-2024 10:27:48,21-03-2024 10:27:49,"0,274s",PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Page_Login/select_Select an option CANARY ISLAND""), ""IC"", true)",Chrome 123.0.0.0,,,21-03-2024 10:27:49,21-03-2024 10:27:49,"0,737s",PASSED
+"click(findTestObject(""Object Repository/Page_Login/button_Login""))",Chrome 123.0.0.0,,,21-03-2024 10:27:49,21-03-2024 10:27:52,"2,210s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/img""), 5)",Chrome 123.0.0.0,,,21-03-2024 10:27:52,21-03-2024 10:27:53,"0,893s",PASSED
+"verifyElementVisible(findTestObject(""Object Repository/Page_PRICING/img""))",Chrome 123.0.0.0,,,21-03-2024 10:27:53,21-03-2024 10:27:53,"0,251s",PASSED
+"waitForElementVisible(findTestObject(""Page_PRICING/span_PRODUCTOS""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:27:53,21-03-2024 10:27:53,"0,245s",PASSED
+"click(findTestObject(""Object Repository/Page_PRICING/span_PRODUCTOS""))",Chrome 123.0.0.0,,,21-03-2024 10:27:53,21-03-2024 10:27:53,"0,277s",PASSED
+"click(findTestObject(""Object Repository/Page_PRICING/span_Tarifas""))",Chrome 123.0.0.0,,,21-03-2024 10:27:53,21-03-2024 10:27:54,"0,481s",PASSED
+"waitForElementPresent(findTestObject(""Page_PRICING/span_Visualizar_tarifas""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:27:54,21-03-2024 10:27:54,"0,455s",PASSED
+"doubleClick(findTestObject(""Page_PRICING/span_Visualizar_tarifas""))",Chrome 123.0.0.0,,,21-03-2024 10:27:54,21-03-2024 10:27:56,"1,555s",PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Page_Visualizar PRODUCTOS/i_Filtros_fa fa-angle-down ml-3""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:27:56,21-03-2024 10:27:57,"1,098s",PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Page_Visualizar PRODUCTOS/h1_Registros totales""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:27:57,21-03-2024 10:27:57,"0,244s",PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Page_Visualizar PRODUCTOS/div_Nombre interno""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:27:57,21-03-2024 10:27:57,"0,249s",PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Visualizar PRODUCTOS/button_Filtros""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:27:57,21-03-2024 10:27:58,"0,257s",PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Visualizar PRODUCTOS/div_Nombre interno""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:27:58,21-03-2024 10:27:58,"0,237s",PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Visualizar PRODUCTOS/h1_Registros totales""), 3)",Chrome 123.0.0.0,,,21-03-2024 10:27:58,21-03-2024 10:27:58,"0,237s",PASSED
+closeBrowser(),Chrome 123.0.0.0,,,21-03-2024 10:27:58,21-03-2024 10:27:58,"0,093s",PASSED

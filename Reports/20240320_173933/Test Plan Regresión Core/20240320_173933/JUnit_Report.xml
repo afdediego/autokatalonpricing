@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Plan Regresión Core" time="47.553" tests="3" failures="1" errors="0">
+   <testsuite name="Test Plan Regresión Core" tests="3" failures="1" errors="0" time="47.553" skipped="0" timestamp="20-03-2024T17:39:34" hostname="afernandezd - localhost" id="Test Suites/Test Plan Regresión Core">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240320_173933/Test Plan Regresi\u00F3n Core/20240320_173933"/>
+         <property name="logFiles" value="/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240320_173933/Test Plan Regresi\u00F3n Core/20240320_173933/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="afernandezd - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.3.1.212"/>
+         <property name="browser" value="Chrome 122.0.0.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="fe90dd94a4b9675f385fbf5340b9ba35"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/P25-2167-LoginPricing" time="12.932" classname="Test Cases/P25-2167-LoginPricing" status="PASSED">
+         <system-out><![CDATA[20-03-2024T17:39:34 - [TEST_CASE][PASSED] - Test Cases/P25-2167-LoginPricing: Test Cases/P25-2167-LoginPricing
+
+20-03-2024T17:39:34 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+20-03-2024T17:39:34 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+20-03-2024T17:39:34 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+20-03-2024T17:39:35 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+20-03-2024T17:39:35 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+20-03-2024T17:39:36 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+20-03-2024T17:39:36 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+20-03-2024T17:39:40 - [MESSAGE][PASSED] - Current window maximized
+
+20-03-2024T17:39:40 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Page_Login/input_Log in to your account__username'
+
+20-03-2024T17:39:41 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Page_Login/input_Log in to your account__username'
+
+20-03-2024T17:39:41 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Page_Login/input_Log in to your account__password'
+
+20-03-2024T17:39:42 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Login/input_Log in to your account__password'
+
+20-03-2024T17:39:42 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+20-03-2024T17:39:42 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+20-03-2024T17:39:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Login/button_Login")): Object: 'Object Repository/Page_Login/button_Login' is clicked on
+
+20-03-2024T17:39:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/button_Login' is clicked on
+
+20-03-2024T17:39:46 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_PRICING/img"), 0): Object 'Object Repository/Page_PRICING/img' is visible
+
+20-03-2024T17:39:46 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+20-03-2024T17:39:46 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/img' is visible
+
+20-03-2024T17:39:46 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/Page_PRICING/img")): Object 'Object Repository/Page_PRICING/img' is visible
+
+20-03-2024T17:39:47 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/img' is visible
+
+20-03-2024T17:39:47 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+20-03-2024T17:39:47 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/P25-2167-VisualizarProductos" time="0.012" classname="Test Cases/P25-2167-VisualizarProductos" status="FAILED">
+         <failure type="FAILED" message="Test Cases/P25-2167-VisualizarProductos FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Unable to navigate to 'https://pre-pricing.recordgo.cloud/login'&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.navigateToUrl(NavigateToUrlKeyword.groovy:83)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.execute(NavigateToUrlKeyword.groovy:67)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl(WebUiBuiltInKeywords.groovy:187)&#xa;	at P25-2167-VisualizarProductos.run(P25-2167-VisualizarProductos:20)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1710952773108.run(TempTestSuite1710952773108.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;Caused by: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?&#xa;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'&#xa;System info: host: 'MacBook-Pro-de-Antonio.local', ip: 'fe80:0:0:0:c07:5788:af6d:a421%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.7'&#xa;Driver info: driver.version: RemoteWebDriver&#xa;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)&#xa;	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#xa;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#xa;	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)&#xa;	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)&#xa;	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.doCall(NavigateToUrlKeyword.groovy:81)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.call(NavigateToUrlKeyword.groovy)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xa;	... 23 more&#xa;"/>
+         <system-out><![CDATA[20-03-2024T17:39:47 - [TEST_CASE][FAILED] - Test Cases/P25-2167-VisualizarProductos: Test Cases/P25-2167-VisualizarProductos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to navigate to 'https://pre-pricing.recordgo.cloud/login'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.navigateToUrl(NavigateToUrlKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.execute(NavigateToUrlKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl(WebUiBuiltInKeywords.groovy:187)
+	at P25-2167-VisualizarProductos.run(P25-2167-VisualizarProductos:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1710952773108.run(TempTestSuite1710952773108.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MacBook-Pro-de-Antonio.local', ip: 'fe80:0:0:0:c07:5788:af6d:a421%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.7'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.doCall(NavigateToUrlKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.call(NavigateToUrlKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 23 more
+
+
+20-03-2024T17:39:47 - [TEST_STEP][FAILED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Unable to navigate to 'https://pre-pricing.recordgo.cloud/login' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to navigate to 'https://pre-pricing.recordgo.cloud/login'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.navigateToUrl(NavigateToUrlKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.execute(NavigateToUrlKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl(WebUiBuiltInKeywords.groovy:187)
+	at P25-2167-VisualizarProductos.run(P25-2167-VisualizarProductos:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1710952773108.run(TempTestSuite1710952773108.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MacBook-Pro-de-Antonio.local', ip: 'fe80:0:0:0:c07:5788:af6d:a421%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.7'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.doCall(NavigateToUrlKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.call(NavigateToUrlKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.navigateToUrl(NavigateToUrlKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.execute(NavigateToUrlKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl(WebUiBuiltInKeywords.groovy:187)
+	at Script1710257999573.run(Script1710257999573.groovy:20)
+	... 18 more
+)
+
+20-03-2024T17:39:47 - [MESSAGE][WARNING] - Cannot take screenshot
+
+20-03-2024T17:39:47 - [MESSAGE][FAILED] - Unable to navigate to 'https://pre-pricing.recordgo.cloud/login' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to navigate to 'https://pre-pricing.recordgo.cloud/login'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.navigateToUrl(NavigateToUrlKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.execute(NavigateToUrlKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl(WebUiBuiltInKeywords.groovy:187)
+	at P25-2167-VisualizarProductos.run(P25-2167-VisualizarProductos:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1710952773108.run(TempTestSuite1710952773108.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MacBook-Pro-de-Antonio.local', ip: 'fe80:0:0:0:c07:5788:af6d:a421%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.7'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.doCall(NavigateToUrlKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.call(NavigateToUrlKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.navigateToUrl(NavigateToUrlKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.execute(NavigateToUrlKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl(WebUiBuiltInKeywords.groovy:187)
+	at Script1710257999573.run(Script1710257999573.groovy:20)
+	... 18 more
+)]]></system-out>
+         <system-err><![CDATA[20-03-2024T17:39:47 - [TEST_CASE][FAILED] - Test Cases/P25-2167-VisualizarProductos: Test Cases/P25-2167-VisualizarProductos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to navigate to 'https://pre-pricing.recordgo.cloud/login'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.navigateToUrl(NavigateToUrlKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.execute(NavigateToUrlKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl(WebUiBuiltInKeywords.groovy:187)
+	at P25-2167-VisualizarProductos.run(P25-2167-VisualizarProductos:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1710952773108.run(TempTestSuite1710952773108.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MacBook-Pro-de-Antonio.local', ip: 'fe80:0:0:0:c07:5788:af6d:a421%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.7'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.doCall(NavigateToUrlKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.call(NavigateToUrlKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 23 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/P25-2167-VerHistoricoProducto" time="34.464" classname="Test Cases/P25-2167-VerHistoricoProducto" status="PASSED">
+         <system-out><![CDATA[20-03-2024T17:39:47 - [TEST_CASE][PASSED] - Test Cases/P25-2167-VerHistoricoProducto: Test Cases/P25-2167-VerHistoricoProducto
+
+20-03-2024T17:39:47 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+20-03-2024T17:39:47 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+20-03-2024T17:39:47 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+20-03-2024T17:39:47 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+20-03-2024T17:39:47 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+20-03-2024T17:39:59 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+20-03-2024T17:39:59 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+20-03-2024T17:40:00 - [MESSAGE][PASSED] - Current window maximized
+
+20-03-2024T17:40:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Page_Login/input_Log in to your account__username'
+
+20-03-2024T17:40:01 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Page_Login/input_Log in to your account__username'
+
+20-03-2024T17:40:01 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Page_Login/input_Log in to your account__password'
+
+20-03-2024T17:40:01 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Login/input_Log in to your account__password'
+
+20-03-2024T17:40:01 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+20-03-2024T17:40:02 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+20-03-2024T17:40:02 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/button_Login")): Object: 'Object Repository/Page_Login/button_Login' is clicked on
+
+20-03-2024T17:40:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/button_Login' is clicked on
+
+20-03-2024T17:40:05 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_PRICING/img"), 8): Object 'Object Repository/Page_PRICING/img' is visible
+
+20-03-2024T17:40:05 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/img' is visible
+
+20-03-2024T17:40:05 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_PRICING/span_PRODUCTOS"), 8): Object 'Object Repository/Page_PRICING/span_PRODUCTOS' is visible
+
+20-03-2024T17:40:05 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/span_PRODUCTOS' is visible
+
+20-03-2024T17:40:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_PRICING/span_PRODUCTOS")): Object: 'Object Repository/Page_PRICING/span_PRODUCTOS' is clicked on
+
+20-03-2024T17:40:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_PRICING/span_PRODUCTOS' is clicked on
+
+20-03-2024T17:40:06 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_PRICING/span_Producto"), 8): Object 'Object Repository/Page_PRICING/span_Producto' is visible
+
+20-03-2024T17:40:06 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/span_Producto' is visible
+
+20-03-2024T17:40:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_PRICING/span_Producto")): Object: 'Object Repository/Page_PRICING/span_Producto' is clicked on
+
+20-03-2024T17:40:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_PRICING/span_Producto' is clicked on
+
+20-03-2024T17:40:06 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_PRICING/span_Visualizar"), 8): Object 'Object Repository/Page_PRICING/span_Visualizar' is visible
+
+20-03-2024T17:40:07 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/span_Visualizar' is visible
+
+20-03-2024T17:40:07 - [TEST_STEP][PASSED] - click(findTestObject("Page_PRICING/span_Visualizar")): Object: 'Object Repository/Page_PRICING/span_Visualizar' is clicked on
+
+20-03-2024T17:40:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_PRICING/span_Visualizar' is clicked on
+
+20-03-2024T17:40:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_Visualizar PRODUCTOS/div_Cdigo"), 6): Object 'Object Repository/Page_Visualizar PRODUCTOS/div_Cdigo' is present
+
+20-03-2024T17:40:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Visualizar PRODUCTOS/div_Cdigo' is present
+
+20-03-2024T17:40:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_Visualizar PRODUCTOS/div_Opciones"), 6): Object 'Object Repository/Page_Visualizar PRODUCTOS/div_Opciones' is present
+
+20-03-2024T17:40:17 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: id("kt_content")/div[@id="app"]/div[@class="kt-portlet kt-portlet--bordered"]/div[@class="kt-portlet__body"]/div[@class="kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--loaded"]/div[@class="bootstrap-table bootstrap4"]/div[@class="fixed-table-container"]/div[@class="fixed-table-body"]/table[@class="table table-bordered table-hover"]/thead[1]/tr[1]/th[7]/div[@class="th-inner"][count(. | //div[@class = 'th-inner ' and (text() = 'Opciones' or . = 'Opciones')]) = count(//div[@class = 'th-inner ' and (text() = 'Opciones' or . = 'Opciones')])]'. Please recheck the objects properties to make sure the desired element is located. 
+
+20-03-2024T17:40:17 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Page_Visualizar PRODUCTOS/div_Opciones'. Try using Self-healing.
+
+20-03-2024T17:40:17 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Page_Visualizar PRODUCTOS/div_Opciones' was broken. Propose an alternative one: '//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[7]/div'.
+
+20-03-2024T17:40:17 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Visualizar PRODUCTOS/div_Opciones' is present
+
+20-03-2024T17:40:17 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_Visualizar PRODUCTOS/button_Filtros"), 6): Object 'Object Repository/Page_Visualizar PRODUCTOS/button_Filtros' is present
+
+20-03-2024T17:40:17 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Visualizar PRODUCTOS/button_Filtros' is present
+
+20-03-2024T17:40:17 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_Visualizar PRODUCTOS/IconHistorico"), 0): Object 'Object Repository/Page_Visualizar PRODUCTOS/IconHistorico' is present
+
+20-03-2024T17:40:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+20-03-2024T17:40:17 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Visualizar PRODUCTOS/IconHistorico' is present
+
+20-03-2024T17:40:17 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Page_Visualizar PRODUCTOS/IconHistorico")): Object: 'Object Repository/Page_Visualizar PRODUCTOS/IconHistorico' is double clicked on
+
+20-03-2024T17:40:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Visualizar PRODUCTOS/IconHistorico' is double clicked on
+
+20-03-2024T17:40:18 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Visualizar PRODUCTOS/h5_Histrico de producto"), 4): Object 'Object Repository/Page_Visualizar PRODUCTOS/h5_Histrico de producto' is present
+
+20-03-2024T17:40:19 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Visualizar PRODUCTOS/h5_Histrico de producto' is present
+
+20-03-2024T17:40:19 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Page_Visualizar PRODUCTOS/IconoOjo"), 4): Object 'Object Repository/Page_Visualizar PRODUCTOS/IconoOjo' is present
+
+20-03-2024T17:40:19 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Visualizar PRODUCTOS/IconoOjo' is present
+
+20-03-2024T17:40:19 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/Page_Visualizar PRODUCTOS/IconoOjo")): Object: 'Object Repository/Page_Visualizar PRODUCTOS/IconoOjo' is double clicked on
+
+20-03-2024T17:40:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Visualizar PRODUCTOS/IconoOjo' is double clicked on
+
+20-03-2024T17:40:21 - [TEST_STEP][PASSED] - comment(""): 
+
+20-03-2024T17:40:21 - [MESSAGE][INFO] - 
+
+20-03-2024T17:40:21 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+20-03-2024T17:40:21 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[20-03-2024T17:39:34 - [TEST_SUITE][FAILED] - Test Plan Regresión Core: Test Cases/P25-2167-VisualizarProductos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to navigate to 'https://pre-pricing.recordgo.cloud/login'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.navigateToUrl(NavigateToUrlKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.execute(NavigateToUrlKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl(WebUiBuiltInKeywords.groovy:187)
+	at P25-2167-VisualizarProductos.run(P25-2167-VisualizarProductos:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1710952773108.run(TempTestSuite1710952773108.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MacBook-Pro-de-Antonio.local', ip: 'fe80:0:0:0:c07:5788:af6d:a421%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.7'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.doCall(NavigateToUrlKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.call(NavigateToUrlKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[20-03-2024T17:39:34 - [TEST_SUITE][FAILED] - Test Plan Regresión Core: Test Cases/P25-2167-VisualizarProductos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to navigate to 'https://pre-pricing.recordgo.cloud/login'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.navigateToUrl(NavigateToUrlKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword.execute(NavigateToUrlKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl(WebUiBuiltInKeywords.groovy:187)
+	at P25-2167-VisualizarProductos.run(P25-2167-VisualizarProductos:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:148)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1710952773108.run(TempTestSuite1710952773108.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MacBook-Pro-de-Antonio.local', ip: 'fe80:0:0:0:c07:5788:af6d:a421%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1', java.version: '17.0.7'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.doCall(NavigateToUrlKeyword.groovy:81)
+	at com.kms.katalon.core.webui.keyword.builtin.NavigateToUrlKeyword$_navigateToUrl_closure1.call(NavigateToUrlKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>

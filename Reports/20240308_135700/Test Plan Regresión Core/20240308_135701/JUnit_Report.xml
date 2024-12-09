@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Plan Regresión Core" time="53.844" tests="2" failures="0" errors="0">
+   <testsuite name="Test Plan Regresión Core" tests="2" failures="0" errors="0" time="53.844" skipped="0" timestamp="08-03-2024T13:57:02" hostname="afernandezd - localhost" id="Test Suites/Test Plan Regresión Core">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240308_135700/Test Plan Regresi\u00F3n Core/20240308_135701"/>
+         <property name="logFiles" value="/Users/afernandezd/Katalon Studio/Pricing-PrimeraPrueba/Reports/20240308_135700/Test Plan Regresi\u00F3n Core/20240308_135701/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="afernandezd - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.3.1.212"/>
+         <property name="browser" value="Chrome 122.0.0.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="2f37730f2ddb8ed1a337451baf59077a"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/LoginPricing" time="18.109" classname="Test Cases/LoginPricing" status="PASSED">
+         <system-out><![CDATA[08-03-2024T13:57:02 - [TEST_CASE][PASSED] - Test Cases/LoginPricing: Test Cases/LoginPricing
+
+08-03-2024T13:57:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+08-03-2024T13:57:03 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+08-03-2024T13:57:03 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+08-03-2024T13:57:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+08-03-2024T13:57:03 - [TEST_STEP][PASSED] - navigateToUrl("https://pre-pricing.recordgo.cloud/login"): Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+08-03-2024T13:57:15 - [MESSAGE][PASSED] - Navigate to 'https://pre-pricing.recordgo.cloud/login' successfully
+
+08-03-2024T13:57:15 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+08-03-2024T13:57:15 - [MESSAGE][PASSED] - Current window maximized
+
+08-03-2024T13:57:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Login/input_Log in to your account__username"), "antonio.diego"): Text 'antonio.diego' is set on object 'Object Repository/Page_Login/input_Log in to your account__username'
+
+08-03-2024T13:57:17 - [MESSAGE][PASSED] - Text 'antonio.diego' is set on object 'Object Repository/Page_Login/input_Log in to your account__username'
+
+08-03-2024T13:57:17 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Login/input_Log in to your account__password"), "4WoE78dHD36JvULd0ZrVWg=="): Text ****** has been set on object 'Object Repository/Page_Login/input_Log in to your account__password'
+
+08-03-2024T13:57:17 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Login/input_Log in to your account__password'
+
+08-03-2024T13:57:17 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Login/select_Select an option CANARY ISLAND"), "IC", true): All options with value 'IC' are selected in object 'Object Repository/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+08-03-2024T13:57:18 - [MESSAGE][PASSED] - All options with value 'IC' are selected in object 'Object Repository/Page_Login/select_Select an option CANARY ISLAND'  using regular expression
+
+08-03-2024T13:57:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Login/button_Login")): Object: 'Object Repository/Page_Login/button_Login' is clicked on
+
+08-03-2024T13:57:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/button_Login' is clicked on
+
+08-03-2024T13:57:20 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Object Repository/Page_PRICING/img")): Object 'Object Repository/Page_PRICING/img' is visible
+
+08-03-2024T13:57:21 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/img' is visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/VisualizarProductos" time="35.685" classname="Test Cases/VisualizarProductos" status="PASSED">
+         <system-out><![CDATA[08-03-2024T13:57:21 - [TEST_CASE][PASSED] - Test Cases/VisualizarProductos: Test Cases/VisualizarProductos
+
+08-03-2024T13:57:21 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_PRICING/span_PRODUCTOS"), 0): Object 'Object Repository/Page_PRICING/span_PRODUCTOS' is visible
+
+08-03-2024T13:57:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+08-03-2024T13:57:21 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/span_PRODUCTOS' is visible
+
+08-03-2024T13:57:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_PRICING/span_PRODUCTOS")): Object: 'Object Repository/Page_PRICING/span_PRODUCTOS' is clicked on
+
+08-03-2024T13:57:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_PRICING/span_PRODUCTOS' is clicked on
+
+08-03-2024T13:57:21 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_PRICING/span_Producto"), 0): Object 'Object Repository/Page_PRICING/span_Producto' is visible
+
+08-03-2024T13:57:21 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+08-03-2024T13:57:22 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/span_Producto' is visible
+
+08-03-2024T13:57:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_PRICING/span_Producto")): Object: 'Object Repository/Page_PRICING/span_Producto' is clicked on
+
+08-03-2024T13:57:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_PRICING/span_Producto' is clicked on
+
+08-03-2024T13:57:22 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_PRICING/span_Visualizar"), 0): Object 'Object Repository/Page_PRICING/span_Visualizar' is visible
+
+08-03-2024T13:57:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+08-03-2024T13:57:22 - [MESSAGE][PASSED] - Object 'Object Repository/Page_PRICING/span_Visualizar' is visible
+
+08-03-2024T13:57:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_PRICING/span_Visualizar")): Object: 'Object Repository/Page_PRICING/span_Visualizar' is clicked on
+
+08-03-2024T13:57:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_PRICING/span_Visualizar' is clicked on
+
+08-03-2024T13:57:24 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_Visualizar PRODUCTOS/div_Cdigo"), 0): Object 'Object Repository/Page_Visualizar PRODUCTOS/div_Cdigo' is not visible after 30 second(s)
+
+08-03-2024T13:57:24 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+08-03-2024T13:57:56 - [MESSAGE][WARNING] - Object 'Object Repository/Page_Visualizar PRODUCTOS/div_Cdigo' is not visible after 30 second(s)
+
+08-03-2024T13:57:56 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Visualizar PRODUCTOS/div_Cdigo"), 0): Object 'Object Repository/Page_Visualizar PRODUCTOS/div_Cdigo' is present
+
+08-03-2024T13:57:56 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+08-03-2024T13:57:56 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Visualizar PRODUCTOS/div_Cdigo' is present]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[08-03-2024T13:57:02 - [TEST_SUITE][PASSED] - Test Plan Regresión Core: Test Cases/VisualizarProductos]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

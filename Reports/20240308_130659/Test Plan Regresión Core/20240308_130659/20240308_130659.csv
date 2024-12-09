@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Plan Regresión Core,Chrome 122.0.0.0,,,08-03-2024 13:07:00,08-03-2024 13:10:16,"3m - 16,355s",FAILED
+,,,,,,,
+Test Cases/LoginPricing,Chrome 122.0.0.0,Entramos en la aplicación Pricing,Login,08-03-2024 13:07:40,08-03-2024 13:07:51,"10,743s",FAILED
+"openBrowser("""")",Chrome 122.0.0.0,,,08-03-2024 13:07:40,08-03-2024 13:07:41,"0,646s",PASSED
+"navigateToUrl(""https://pre-pricing.recordgo.cloud/login"")",Chrome 122.0.0.0,,,08-03-2024 13:07:41,08-03-2024 13:07:50,"8,541s",PASSED
+"doubleClick(findTestObject(""Object Repository/Page_Login/input_Log in to your account__username""))",Chrome 122.0.0.0,,,08-03-2024 13:07:50,08-03-2024 13:07:51,"1,224s",PASSED
+"setText(findTestObject(""Page_Login/button_Login""), ""antonio.diego"")",Chrome 122.0.0.0,,,08-03-2024 13:07:51,08-03-2024 13:07:51,"0,314s",FAILED
+,,,,,,,
+Test Cases/VisualizarProductos,Chrome 122.0.0.0,Prueba que accede a la ventana donde se visualiza el listado de productos creados,Productos,08-03-2024 13:09:40,08-03-2024 13:10:16,"36,179s",FAILED
+"click(findTestObject(""Object Repository/Page_PRICING/span_PRODUCTOS""))",Chrome 122.0.0.0,,,08-03-2024 13:09:40,08-03-2024 13:10:16,"36,173s",FAILED

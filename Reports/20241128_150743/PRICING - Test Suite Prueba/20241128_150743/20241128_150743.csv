@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+PRICING - Test Suite Prueba,Chrome 131.0.0.0,,,28-11-2024 15:07:47,28-11-2024 15:09:28,"1m - 41,092s",FAILED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/KO-P25-2167-PRODUCTOS-Visualizar productos-Ver Histórico,Chrome 131.0.0.0,Se comprueba que se visualizan productos y su  histórico,,28-11-2024 15:07:47,28-11-2024 15:08:22,"34,760s",FAILED
+"openBrowser("""")",Chrome 131.0.0.0,,,28-11-2024 15:07:48,28-11-2024 15:07:50,"1,932s",PASSED
+"navigateToUrl(""https://pre-sales.recordgo.cloud/login"")",Chrome 131.0.0.0,,,28-11-2024 15:07:50,28-11-2024 15:07:50,"0,974s",PASSED
+maximizeWindow(),Chrome 131.0.0.0,,,28-11-2024 15:07:50,28-11-2024 15:07:51,"0,414s",PASSED
+"setText(findTestObject(""Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username""), ""antonio.diego"")",Chrome 131.0.0.0,,,28-11-2024 15:07:51,28-11-2024 15:08:22,"31,299s",FAILED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/P25-2163-PRODUCTOS-VisualizarProductos,Chrome 131.0.0.0,Se comprueba que se visualizan productos,Productos,28-11-2024 15:08:22,28-11-2024 15:08:55,"33,182s",FAILED
+"openBrowser("""")",Chrome 131.0.0.0,,,28-11-2024 15:08:22,28-11-2024 15:08:23,"0,832s",PASSED
+"navigateToUrl(""https://pre-sales.recordgo.cloud/login"")",Chrome 131.0.0.0,,,28-11-2024 15:08:23,28-11-2024 15:08:24,"0,775s",PASSED
+maximizeWindow(),Chrome 131.0.0.0,,,28-11-2024 15:08:24,28-11-2024 15:08:24,"0,381s",PASSED
+"setText(findTestObject(""Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username""), ""antonio.diego"")",Chrome 131.0.0.0,,,28-11-2024 15:08:24,28-11-2024 15:08:55,"31,152s",FAILED
+,,,,,,,
+Test Cases/PRICING-Test Plan Regresión Core/P25-2166-PRODUCTOS-Visualizar productos-Clonar,Chrome 131.0.0.0,Se comprueba que se visualizan productos y su acción de clonado,,28-11-2024 15:08:55,28-11-2024 15:09:28,"33,071s",FAILED
+"openBrowser("""")",Chrome 131.0.0.0,,,28-11-2024 15:08:55,28-11-2024 15:08:56,"0,803s",PASSED
+"navigateToUrl(""https://pre-sales.recordgo.cloud/login"")",Chrome 131.0.0.0,,,28-11-2024 15:08:56,28-11-2024 15:08:57,"0,698s",PASSED
+maximizeWindow(),Chrome 131.0.0.0,,,28-11-2024 15:08:57,28-11-2024 15:08:57,"0,403s",PASSED
+"setText(findTestObject(""Pricing-Test Plan Regresión Core/Page_Login/input_Log in to your account__username""), ""antonio.diego"")",Chrome 131.0.0.0,,,28-11-2024 15:08:57,28-11-2024 15:09:28,"31,108s",FAILED

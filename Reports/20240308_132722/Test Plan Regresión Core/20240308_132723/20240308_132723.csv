@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Plan Regresión Core,,,,08-03-2024 13:27:24,08-03-2024 13:27:25,"0,479s",FAILED
+,,,,,,,
+Test Cases/LoginPricing,,Entramos en la aplicación Pricing,Login,08-03-2024 13:27:24,08-03-2024 13:27:24,"0,021s",FAILED
+"navigateToUrl(""https://pre-pricing.recordgo.cloud/login"")",,,,08-03-2024 13:27:24,08-03-2024 13:27:24,"0,005s",FAILED
+,,,,,,,
+Test Cases/VisualizarProductos,,Prueba que accede a la ventana donde se visualiza el listado de productos creados,Productos,08-03-2024 13:27:25,08-03-2024 13:27:25,"0,029s",FAILED
+"click(findTestObject(""Object Repository/Page_PRICING/span_PRODUCTOS""))",,,,08-03-2024 13:27:25,08-03-2024 13:27:25,"0,016s",FAILED

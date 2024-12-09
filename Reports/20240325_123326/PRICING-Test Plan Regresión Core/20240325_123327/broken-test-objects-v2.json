@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones",
+      "brokenLocator": "id(\"kt_content\")/div[@id\u003d\"app\"]/div[@class\u003d\"kt-portlet kt-portlet--bordered\"]/div[@class\u003d\"kt-portlet__body\"]/div[@class\u003d\"kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--loaded\"]/div[@class\u003d\"bootstrap-table bootstrap4\"]/div[@class\u003d\"fixed-table-container\"]/div[@class\u003d\"fixed-table-body\"]/table[@class\u003d\"table table-bordered table-hover\"]/thead[1]/tr[1]/th[7]/div[@class\u003d\"th-inner\"][count(. | //div[@class \u003d \u0027th-inner \u0027 and (text() \u003d \u0027Opciones\u0027 or . \u003d \u0027Opciones\u0027)]) \u003d count(//div[@class \u003d \u0027th-inner \u0027 and (text() \u003d \u0027Opciones\u0027 or . \u003d \u0027Opciones\u0027)])]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//div[@id\u003d\u0027app\u0027]/div[2]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[7]/div",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20240325_123326/PRICING-Test Plan Regresión Core/20240325_123327/Object Repository/Pricing-Test Plan Regresión Core/Page_Visualizar PRODUCTOS/div_Opciones_XPATH.png"
+    }
+  ]
+}
