@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar la hoja de detalle de complemento</description>
+   <name>P25-2173-COMPLEMENTOS-Visualizar Hoja Detalle de complemento</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>03275fcb-55c6-48f9-941f-d3bc07b4c106</testCaseGuid>
+</TestCaseEntity>

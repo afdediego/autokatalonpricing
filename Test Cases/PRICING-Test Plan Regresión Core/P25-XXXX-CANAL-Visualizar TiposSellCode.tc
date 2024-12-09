@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar el listado de politicas de combustible</description>
+   <name>P25-XXXX-CANAL-Visualizar TiposSellCode</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>59212fae-2979-44de-b1fc-744b7d2d63e7</testCaseGuid>
+</TestCaseEntity>

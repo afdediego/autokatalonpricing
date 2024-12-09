@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar el listado de politicas de combustible</description>
+   <name>P25-2186-POLITICAS-Visualizar Politica Combustible</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>437f87ed-603d-40ed-9fec-dce26363ba81</testCaseGuid>
+</TestCaseEntity>

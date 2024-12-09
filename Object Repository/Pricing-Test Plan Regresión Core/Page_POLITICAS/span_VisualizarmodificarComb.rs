@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_VisualizarmodificarComb</name>
+   <tag></tag>
+   <elementGuidId>fd6ea501-d594-44de-b955-9d7c2a7c3808</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;kt_aside_menu&quot;]/ul/li[4]/div/ul/li[2]/div/ul/li[3]/a/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>DIV</value>
+      <webElementGuid>2adf53b0-abca-4655-8242-8a9309e25178</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>xpath1733743971679</value>
+      <webElementGuid>6916133d-e02c-4948-a612-12905a63e2f0</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

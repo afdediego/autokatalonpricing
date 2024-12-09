@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>IconoHojaDetalleComplemento</name>
+   <tag></tag>
+   <elementGuidId>621ddf65-7b98-4130-b696-9383a6ea635b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//i[@class = 'flaticon2-paper']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td:nth-of-type(7) > a.btn.btn-sm.btn-clean.btn-icon.btn-icon-md.eye > i.flaticon-eye</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='modal-history-complement']/div/div/div[2]/div/div[2]/div[2]/table/tbody/tr/td[7]/a/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=dialog[name=&quot;Histórico del complemento&quot;i] >> internal:attr=[title=&quot;Ver detalle&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>de015ece-4565-43dc-87d6-26bc0194df81</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flaticon2-paper</value>
+      <webElementGuid>cf9f4003-6976-42e7-93e2-d178e5bde295</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;app&quot;]/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr[1]/td[9]/a[4]/i</value>
+      <webElementGuid>d6026156-4c84-44ec-94e6-d4e3eb791841</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-history-complement']/div/div/div[2]/div/div[2]/div[2]/table/tbody/tr/td[7]/a/i</value>
+      <webElementGuid>d5c9b9da-c18e-49ab-a428-a78277876a66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[7]/a/i</value>
+      <webElementGuid>af8dc938-dc19-401e-ab19-222f7de0b087</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

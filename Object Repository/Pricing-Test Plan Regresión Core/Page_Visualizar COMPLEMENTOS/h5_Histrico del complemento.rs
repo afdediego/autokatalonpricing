@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h5_Histrico del complemento</name>
+   <tag></tag>
+   <elementGuidId>3abf493c-d269-468c-9612-cb5c3133fa5f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;modal-history-complement&quot;)/div[@class=&quot;modal-dialog modal-xxl&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-header&quot;]/h5[@id=&quot;modal-detail-label&quot;][count(. | //h5[@id = 'modal-detail-label' and @class = 'modal-title' and (contains(text(), 'Histórico del complemento') or contains(., 'Histórico del complemento'))]) = count(//h5[@id = 'modal-detail-label' and @class = 'modal-title' and (contains(text(), 'Histórico del complemento') or contains(., 'Histórico del complemento'))])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#modal-detail-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//h5[@id='modal-detail-label']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Histórico del complemento&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>dd1e48d3-0293-4b9a-9e9d-9d56935002a9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>modal-detail-label</value>
+      <webElementGuid>ac70390c-6e99-4b51-88a7-563fa2c661f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal-title</value>
+      <webElementGuid>a81af7b4-18cb-4957-b27f-837c37c5e305</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Histórico del complemento</value>
+      <webElementGuid>dcdf199c-a86b-456c-9e53-29130b59aa0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-history-complement&quot;)/div[@class=&quot;modal-dialog modal-xxl&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-header&quot;]/h5[@id=&quot;modal-detail-label&quot;]</value>
+      <webElementGuid>f6430dc8-7ed8-4a4b-89d4-017ae9cbb75a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//h5[@id='modal-detail-label']</value>
+      <webElementGuid>ec105f5c-f051-4868-92a8-c0880fd2d79c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-history-complement']/div/div/div/h5</value>
+      <webElementGuid>bf1ec800-864b-4989-be8d-ce054fdafa95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='›'])[1]/following::h5[1]</value>
+      <webElementGuid>84ab0ab2-ad33-4147-b926-e8bffe60491e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='‹'])[1]/following::h5[1]</value>
+      <webElementGuid>d948e184-47a9-4f18-b4b8-f9a8849ff36c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Loading, please wait'])[2]/preceding::h5[1]</value>
+      <webElementGuid>4013efd8-255e-4843-b198-b7b5ab9e136e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='id Complemento'])[1]/preceding::h5[1]</value>
+      <webElementGuid>af572dd3-d6a0-46db-8c99-a2b06a9dcadb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Histórico del complemento']/parent::*</value>
+      <webElementGuid>1dd28d85-2fc5-4afd-9f70-21b0b8dda7d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h5</value>
+      <webElementGuid>1d6ff714-676a-4fe1-8d48-85f77275991a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[@id = 'modal-detail-label' and (text() = 'Histórico del complemento' or . = 'Histórico del complemento')]</value>
+      <webElementGuid>6eac3dc8-d91c-4f3e-8ffa-8b1f04001872</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

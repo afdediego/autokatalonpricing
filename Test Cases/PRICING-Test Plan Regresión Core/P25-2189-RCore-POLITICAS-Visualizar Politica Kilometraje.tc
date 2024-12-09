@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>P25-2189-RCore-POLITICAS-Visualizar Politica Kilometraje</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>30b155d8-384e-40d4-b9be-5eaedbbef055</testCaseGuid>
+</TestCaseEntity>

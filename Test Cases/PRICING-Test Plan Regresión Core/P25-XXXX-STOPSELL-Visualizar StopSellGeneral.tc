@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar el listado de politicas de combustible</description>
+   <name>P25-XXXX-STOPSELL-Visualizar StopSellGeneral</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>920c583c-66cf-4fe8-ac3a-ac545875e54c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar complementos y se comprueba la acción de clonar complemento</description>
+   <name>P25-2172-COMPLEMENTOS-Clonar complemento</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b4c061bb-ccd2-4631-af4c-4ebd42b6f86c</testCaseGuid>
+</TestCaseEntity>

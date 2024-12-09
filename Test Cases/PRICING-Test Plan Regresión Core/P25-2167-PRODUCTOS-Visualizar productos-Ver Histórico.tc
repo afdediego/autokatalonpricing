@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se comprueba que se visualizan productos y su  histórico</description>
+   <name>P25-2167-PRODUCTOS-Visualizar productos-Ver Histórico</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>17ac85e0-1e04-44d4-ab94-b999945d6256</testCaseGuid>
+</TestCaseEntity>

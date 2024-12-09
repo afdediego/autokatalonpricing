@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Button_Filtros_Desplegable</name>
+   <tag></tag>
+   <elementGuidId>f8ab3b33-5b57-4f96-b9b1-830e37060b62</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;btn-filters&quot;)/i[@class=&quot;fa fa-angle-down ml-3&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.fa.fa-angle-down.ml-3</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='btn-filters']/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Filtros &quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>86cdfa92-60ca-48f9-a749-0143c01ceb53</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-angle-down ml-3</value>
+      <webElementGuid>fd373835-3c50-4f18-acc6-9ba681cf8d42</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;btn-filters&quot;)/i[@class=&quot;fa fa-angle-down ml-3&quot;]</value>
+      <webElementGuid>149496d2-4933-4f7a-904e-d30547cf9c95</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='btn-filters']/i</value>
+      <webElementGuid>54c3c066-6e45-4bc4-9c3a-bf62bc00f4be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div/button/i</value>
+      <webElementGuid>7fda03f8-8c8e-40c1-8927-1c04f3c2a2e4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

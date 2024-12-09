@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Opciones</name>
+   <tag></tag>
+   <elementGuidId>700371da-d87c-401d-9520-610272afe9bb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[7]/div</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;kt_content&quot;)/div[@id=&quot;app&quot;]/div[@class=&quot;kt-portlet kt-portlet--bordered&quot;]/div[@class=&quot;kt-portlet__body&quot;]/div[@class=&quot;kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--loaded&quot;]/div[@class=&quot;bootstrap-table bootstrap4&quot;]/div[@class=&quot;fixed-table-container&quot;]/div[@class=&quot;fixed-table-body&quot;]/table[@class=&quot;table table-bordered table-hover&quot;]/thead[1]/tr[1]/th[7]/div[@class=&quot;th-inner&quot;][count(. | //div[@class = 'th-inner ' and (text() = 'Opciones' or . = 'Opciones')]) = count(//div[@class = 'th-inner ' and (text() = 'Opciones' or . = 'Opciones')])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>th:nth-of-type(7) > div.th-inner</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Opciones&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>45cf1d29-01fd-4c29-a66b-93f385b2ff2d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>th-inner </value>
+      <webElementGuid>750e8992-ed83-485d-a098-f29388d80bed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Opciones</value>
+      <webElementGuid>ac5e19a4-1898-47f2-94f4-433d8f087df8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;kt_content&quot;)/div[@id=&quot;app&quot;]/div[@class=&quot;kt-portlet kt-portlet--bordered&quot;]/div[@class=&quot;kt-portlet__body&quot;]/div[@class=&quot;kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--loaded&quot;]/div[@class=&quot;bootstrap-table bootstrap4&quot;]/div[@class=&quot;fixed-table-container&quot;]/div[@class=&quot;fixed-table-body&quot;]/table[@class=&quot;table table-bordered table-hover&quot;]/thead[1]/tr[1]/th[7]/div[@class=&quot;th-inner&quot;]</value>
+      <webElementGuid>8aae83b9-2761-481d-998c-8a51171920cc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/thead/tr/th[7]/div</value>
+      <webElementGuid>4de7a2b9-a4c9-4979-9b4b-5e3d4a81a538</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Política de modificaciones'])[2]/following::div[2]</value>
+      <webElementGuid>1d36b16d-84c3-4e79-9d2c-2c4cc0a43f9b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Política de kilometraje'])[2]/following::div[4]</value>
+      <webElementGuid>fade9a54-4ac9-403e-93ee-81cf1edf79f7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GO EASY'])[1]/preceding::div[2]</value>
+      <webElementGuid>11d9b3ac-f70d-4ef3-9f4d-6e598ad6a664</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='GO EASY'])[2]/preceding::div[2]</value>
+      <webElementGuid>3d92f1ae-4d85-4bde-918d-c6ac96256b82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Opciones']/parent::*</value>
+      <webElementGuid>8d11f5f9-0ea7-469a-84dd-262c5ffa24b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//th[7]/div</value>
+      <webElementGuid>a8e2ed8f-85f6-469b-a6a9-d404119a1bea</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Opciones' or . = 'Opciones')]</value>
+      <webElementGuid>c493e6fc-8e4a-497d-bf19-db2d205e1ad8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

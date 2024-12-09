@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar el listado de politicas de combustible</description>
+   <name>P25-XXXX-TTCC-Visualizar TTCC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8b06b13a-55d2-4df9-bbf7-b15aca8914c4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar el listado de politicas de combustible</description>
+   <name>P25-XXXX-CANAL-Visualizar Canales</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2487a61e-c0f9-41ba-a743-29c4c00614d8</testCaseGuid>
+</TestCaseEntity>

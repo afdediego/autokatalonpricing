@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>modalBodyInfoComplemento</name>
+   <tag></tag>
+   <elementGuidId>734fe0bc-d32c-41d8-92bd-9cc3dced1953</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@div = 'data-v-b62db878' and @class = 'modal-body' and @id = 'complementView']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#modal-version-complement > div.modal-dialog.modal-xxl > div.modal-content > div.modal-body</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='modal-version-complement']/div/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#modal-version-complement div >> internal:has-text=&quot;Id de Complemento 77 Categoría FUEL Nombre interno FUEL Grupo de traducciones 24&quot;i >> nth=2</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>div</name>
+      <type>Main</type>
+      <value>data-v-b62db878</value>
+      <webElementGuid>79ff051b-e241-4870-ab8f-65bcc39de0e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal-body</value>
+      <webElementGuid>33f09a6a-e90f-44e4-a7f9-b388ac739dfd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-version-complement&quot;)/div[@class=&quot;modal-dialog modal-xxl&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-body&quot;]</value>
+      <webElementGuid>5999a74b-fe4e-4134-ba61-34ba3cd55902</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>complementView</value>
+      <webElementGuid>96fa7662-65b3-44c6-abd2-671009515da1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-version-complement']/div/div/div[2]</value>
+      <webElementGuid>db51b7c0-b2ab-418f-ad1e-1afc979a1587</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Versión seleccionada de complemento'])[1]/following::div[1]</value>
+      <webElementGuid>0262eaa0-c13c-42a1-870d-3eba6f91dd52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='›'])[2]/following::div[7]</value>
+      <webElementGuid>ed24e9b0-0a14-4bd1-ad4b-8cab133ec87d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div[2]</value>
+      <webElementGuid>a6cde225-f57a-4a3f-9679-3c15a25689c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Id de Complemento 77 Categoría FUEL Nombre interno FUEL Grupo de traducciones 24  Fecha de edición: 01/12/2023 12:42:15 Editado por: ADTestUser Fecha de creación - Creado por: -  Id de la versión 7 Artículo de complemento CANCELLATION Por defecto de reserva: NO Por defecto de contrato: NO  Automático: NO Editado por: ADTestUser Nombre /Descripción comercial:  Anticipación de pre-reserva: -  Notas:  Desactivado: NO   Canales excluidos:  Tarifas:  : CANCELLATION FEE LPA  ' or . = 'Id de Complemento 77 Categoría FUEL Nombre interno FUEL Grupo de traducciones 24  Fecha de edición: 01/12/2023 12:42:15 Editado por: ADTestUser Fecha de creación - Creado por: -  Id de la versión 7 Artículo de complemento CANCELLATION Por defecto de reserva: NO Por defecto de contrato: NO  Automático: NO Editado por: ADTestUser Nombre /Descripción comercial:  Anticipación de pre-reserva: -  Notas:  Desactivado: NO   Canales excluidos:  Tarifas:  : CANCELLATION FEE LPA  ')]</value>
+      <webElementGuid>007d5219-19ae-46a8-86a8-064198fcd28c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

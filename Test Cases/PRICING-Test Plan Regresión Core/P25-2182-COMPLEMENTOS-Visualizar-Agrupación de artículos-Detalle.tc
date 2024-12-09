@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se visualiza la acción de agrupación de artículos  y se accede a su detalle</description>
+   <name>P25-2182-COMPLEMENTOS-Visualizar-Agrupación de artículos-Detalle</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d3a16f8c-63d9-447b-8a7f-3df4680ee094</testCaseGuid>
+</TestCaseEntity>

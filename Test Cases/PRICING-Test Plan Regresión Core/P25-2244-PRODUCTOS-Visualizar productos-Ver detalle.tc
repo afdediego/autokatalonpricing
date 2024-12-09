@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visuaizar el detalle de un producto desde el listado de productos</description>
+   <name>P25-2244-PRODUCTOS-Visualizar productos-Ver detalle</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8ed40f07-7e2a-4dfe-a41b-ed823e9a5338</testCaseGuid>
+</TestCaseEntity>

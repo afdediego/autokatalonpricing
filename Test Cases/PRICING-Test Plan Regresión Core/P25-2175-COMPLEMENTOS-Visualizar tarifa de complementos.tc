@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar  la tarifa de complementos</description>
+   <name>P25-2175-COMPLEMENTOS-Visualizar tarifa de complementos</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>48b8e854-d75e-4e7c-9580-31bba7c025ed</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_active_flaticon-eye</name>
+   <tag></tag>
+   <elementGuidId>6ef3b747-2d54-497a-bd32-8f6dbd35434d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//i[@class = 'flaticon-eye']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.flaticon-eye</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr/td[9]/a/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;7 FUEL FUEL Cargo por cancelación Cargo por cancelación CANCELLATION FUEL active    &quot;i] >> internal:attr=[title=&quot;Ver detalle&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>2d4ee921-5bc3-451b-964a-7c5159b80b7d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>flaticon-eye</value>
+      <webElementGuid>29eccf35-297f-4ae3-b3b3-38becbef183c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;kt_content&quot;)/div[@id=&quot;app&quot;]/div[@class=&quot;kt-portlet kt-portlet--bordered&quot;]/div[@class=&quot;kt-portlet__body&quot;]/div[@class=&quot;kt-datatable kt-datatable--default kt-datatable--brand kt-datatable--loaded&quot;]/div[@class=&quot;bootstrap-table bootstrap4&quot;]/div[@class=&quot;fixed-table-container&quot;]/div[@class=&quot;fixed-table-body&quot;]/table[@class=&quot;table table-bordered table-hover&quot;]/tbody[1]/tr[1]/td[9]/a[@class=&quot;btn btn-sm btn-clean btn-icon btn-icon-md eye&quot;]/i[@class=&quot;flaticon-eye&quot;]</value>
+      <webElementGuid>4dc91411-ef69-4007-a22b-307011487a59</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr/td[9]/a/i</value>
+      <webElementGuid>c4fb13e3-6a31-4677-84d5-d50d80224734</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[9]/a/i</value>
+      <webElementGuid>f93ed1ec-a7a4-4872-a6c1-2d7e4699eebb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

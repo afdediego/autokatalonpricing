@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>IconHistorico</name>
+   <tag></tag>
+   <elementGuidId>75a3904b-57a8-4225-a4a1-f330dcda6d5c</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Visualizar PRODUCTOS/i_MODIFICATION POLICY_flaticon2-time.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Visualizar PRODUCTOS/i_MODIFICATION POLICY_flaticon2-time.png</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;app&quot;]/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr[1]/td[7]/a[4][count(. | //a[@class = 'btn btn-sm btn-clean btn-icon btn-icon-md history']) = count(//a[@class = 'btn btn-sm btn-clean btn-icon btn-icon-md history'])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.flaticon2-time</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr/td[7]/a[4]/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;GO EASY GO EASY GO EASY FULL FULL POLICY UNLIMITED KM MODIFICATION POLICY    &quot;i] >> internal:attr=[title=&quot;Histórico&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>cb335946-31c2-4fe9-afd2-42b9ff40cec9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-sm btn-clean btn-icon btn-icon-md history</value>
+      <webElementGuid>bef0fcdc-f07c-45ed-94bc-55ef5f8d89b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;app&quot;]/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr[1]/td[7]/a[4]</value>
+      <webElementGuid>98520a6c-acae-44b6-a518-ee0e6c753e5d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='app']/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr/td[7]/a[4]/i</value>
+      <webElementGuid>ef54a7c8-00c4-401e-ab40-eef9bbfedc25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[4]/i</value>
+      <webElementGuid>bea4fa9b-4ab7-44ea-bcd3-2e0ccea4a392</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>//*[@id=&quot;app&quot;]/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr[1]/td[7]/a[4]</value>
+      <webElementGuid>ba9b3c99-1fda-47bd-966c-677f79bc71da</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

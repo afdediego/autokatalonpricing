@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar el listado de politicas de combustible</description>
+   <name>P25-XXXX-DELEGACIONES-Visualizar AgrupDelegaciones</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4d7f51fa-2d00-4123-995e-4f60bd6cbedc</testCaseGuid>
+</TestCaseEntity>

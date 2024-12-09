@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Entramos en la aplicación Pricing con un KO en el user</description>
+   <name>P25-LoginPricing-KO-user</name>
+   <tag>Login</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>77cf82a5-4594-46e8-a932-c3c4298ec060</testCaseGuid>
+</TestCaseEntity>

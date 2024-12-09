@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se comprueba que se visualizan productos y su acción de clonado</description>
+   <name>P25-2166-PRODUCTOS-Visualizar productos-Clonar</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dd95b892-e6a9-479c-b42e-edd691d8ea91</testCaseGuid>
+</TestCaseEntity>

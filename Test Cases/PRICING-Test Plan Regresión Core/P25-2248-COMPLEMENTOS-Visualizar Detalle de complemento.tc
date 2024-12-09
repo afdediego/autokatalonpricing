@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar el detalle del un complemento dellistado de complementos</description>
+   <name>P25-2248-COMPLEMENTOS-Visualizar Detalle de complemento</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af5d02a4-d016-4080-b326-2537218928b5</testCaseGuid>
+</TestCaseEntity>

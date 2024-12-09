@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a la ventana donde se visualiza el listado de tarifa productos</description>
+   <name>P25-2246-PRODUCTOS-Visualizar tarifa de producto</name>
+   <tag>Productos</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e5a253d5-60e0-4de2-ba33-2ece6ad0eaf7</testCaseGuid>
+</TestCaseEntity>

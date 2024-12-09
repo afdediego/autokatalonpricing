@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h5_Versin seleccionada de complemento</name>
+   <tag></tag>
+   <elementGuidId>86ca6674-1167-48cd-98be-b7ce1f4c25a0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//h5[@id = 'modal-detail-label' and @class = 'modal-title' and (contains(text(), 'Versión seleccionada de complemento') or contains(., 'Versión seleccionada de complemento'))]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#modal-version-complement > div.modal-dialog.modal-xxl > div.modal-content > div.modal-header > #modal-detail-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//h5[@id='modal-detail-label'])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;Versión seleccionada de complemento&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h5</value>
+      <webElementGuid>8776ebdd-9d0b-4d3f-a30f-0aad6e9ab566</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>modal-detail-label</value>
+      <webElementGuid>4ef60cdf-2159-4f85-95a5-6d693da4aae5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>modal-title</value>
+      <webElementGuid>104d668e-c606-4d5f-ab61-0e5b8f6b80f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>contains</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Versión seleccionada de complemento</value>
+      <webElementGuid>b5e4371a-e52f-4d6e-ae79-02d118d55cce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;modal-version-complement&quot;)/div[@class=&quot;modal-dialog modal-xxl&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-header&quot;]/h5[@id=&quot;modal-detail-label&quot;]</value>
+      <webElementGuid>72848aad-9bfc-4519-bf2f-1af8afbece9f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//h5[@id='modal-detail-label'])[2]</value>
+      <webElementGuid>f37b59a1-1505-4673-a581-5ea8dd2f8772</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='modal-version-complement']/div/div/div/h5</value>
+      <webElementGuid>0f2b119d-9fbf-442f-bc98-5e81bb262a04</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='›'])[2]/following::h5[1]</value>
+      <webElementGuid>c306df18-812c-4e5f-b106-25efded9736a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='‹'])[2]/following::h5[1]</value>
+      <webElementGuid>88e96bd3-a59b-438f-b22d-163954fa368a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Id de Complemento'])[1]/preceding::h5[1]</value>
+      <webElementGuid>8eb99fa2-f465-4453-909d-ff6d9747b48f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Categoría'])[3]/preceding::h5[1]</value>
+      <webElementGuid>c1574048-12f0-4f62-a033-5c1f9204998f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Versión seleccionada de complemento']/parent::*</value>
+      <webElementGuid>7f255c94-e479-4fb8-a9cb-093bc2a121c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div/h5</value>
+      <webElementGuid>be092071-d257-4817-9cdc-1db6cf6a2be6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h5[@id = 'modal-detail-label' and (text() = 'Versión seleccionada de complemento' or . = 'Versión seleccionada de complemento')]</value>
+      <webElementGuid>5144d8a7-c0e7-42d2-8405-faf9e8af0999</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

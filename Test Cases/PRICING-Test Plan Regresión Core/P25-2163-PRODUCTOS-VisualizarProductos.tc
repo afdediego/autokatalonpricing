@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se comprueba que se visualizan productos</description>
+   <name>P25-2163-PRODUCTOS-VisualizarProductos</name>
+   <tag>Productos</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eaa87484-0932-4631-b818-99a79aaed32a</testCaseGuid>
+</TestCaseEntity>

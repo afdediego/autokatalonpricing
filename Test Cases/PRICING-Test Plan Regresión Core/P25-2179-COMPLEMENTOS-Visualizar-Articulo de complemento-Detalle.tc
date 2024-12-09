@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se visualiza la acción de artículo de complemento y se accede a su detalle</description>
+   <name>P25-2179-COMPLEMENTOS-Visualizar-Articulo de complemento-Detalle</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6bec3d7d-5dd1-4d93-8986-528e78393051</testCaseGuid>
+</TestCaseEntity>

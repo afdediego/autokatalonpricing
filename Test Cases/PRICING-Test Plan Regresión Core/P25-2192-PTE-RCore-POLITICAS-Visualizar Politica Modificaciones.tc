@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>P25-2192-PTE-RCore-POLITICAS-Visualizar Politica Modificaciones</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ce431bcb-93aa-47f8-80a5-7f452e1d2979</testCaseGuid>
+</TestCaseEntity>

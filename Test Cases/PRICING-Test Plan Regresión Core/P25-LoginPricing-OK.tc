@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Entramos en la aplicación Pricing OK</description>
+   <name>P25-LoginPricing-OK</name>
+   <tag>Login</tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d9eda798-a06e-4303-ae65-1b362f5469f3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_VisualizarmodificarPartners</name>
+   <tag></tag>
+   <elementGuidId>94b9fbad-32ed-497f-bef6-d58f50181c34</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[3]/div/div[1]/div[2]/div/ul/li[5]/div/ul/li[2]/div/ul/li[3]/a/span[2]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>xpath1733743971679</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>DIV</value>
+      <webElementGuid>ff3244d8-119f-4518-843f-65bd4d17eb1d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>xpath1733743971679</value>
+      <webElementGuid>b03a7427-55f1-4092-8066-f504a3ed840e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

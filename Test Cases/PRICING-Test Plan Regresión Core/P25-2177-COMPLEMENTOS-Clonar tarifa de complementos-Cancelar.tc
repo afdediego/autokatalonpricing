@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se realiza la acción de clonar tarifa de complementos</description>
+   <name>P25-2177-COMPLEMENTOS-Clonar tarifa de complementos-Cancelar</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a582c8bc-5c53-454d-9a28-05798de1cc8a</testCaseGuid>
+</TestCaseEntity>

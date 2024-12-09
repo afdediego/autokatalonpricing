@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Se accede a visualizar el listado de politicas de combustible</description>
+   <name>P25-XXXX-TRADUCCIONES-Visualizar Traducciones</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4a6db1ff-2680-4cf2-a396-3c0ddbb5db50</testCaseGuid>
+</TestCaseEntity>
