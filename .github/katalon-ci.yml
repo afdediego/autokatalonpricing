@@ -1,0 +1,49 @@
+name: Ejecutar pruebas Katalon
+
+on:
+  schedule:
+    - cron: '0 21 */2 * *' # Cada dos días a las 21:00 (hora UTC)
+  workflow_dispatch: # Para permitir ejecución manual
+
+jobs:
+  run-katalon-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Clonar el repositorio
+      - name: Checkout código fuente
+        uses: actions/checkout@v3
+
+      # Paso 2: Instalar dependencias necesarias para Katalon
+      - name: Configurar entorno
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-11-jdk wget unzip
+
+      # Paso 3: Descargar e instalar Katalon
+      - name: Instalar Katalon
+        run: |
+          wget https://github.com/katalon-studio/katalon-studio/releases/download/v8.6.5/Katalon_Studio_Engine_Linux_64-8.6.5.tar.gz
+          tar -xvzf Katalon_Studio_Engine_Linux_64-8.6.5.tar.gz
+          sudo mv Katalon_Studio_Engine_Linux_64-8.6.5 /opt/katalon
+
+      # Paso 4: Conectar a VPN (FortiClient)
+      - name: Conectar a VPN (FortiClient)
+        run: |
+          echo "Conectando a la VPN"
+          fortivpn --server 10.11.12.10 --username ext_adiego@primeit.es --password diego1313
+
+      # Paso 5: Ejecutar pruebas Katalon
+      - name: Ejecutar pruebas
+        run: |
+          /opt/katalon/katalonc -noSplash -runMode=console -projectPath="$(pwd)" \
+          -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core.ts" -browserType="Chrome (headless)"
+
+      # Paso 6: Subir resultados al repositorio
+      - name: Subir resultados
+        run: |
+          git config --global user.name "afdediego"
+          git config --global user.email "ext_adiego@primeit.es"
+          git add Reports/
+          git commit -m "Resultados de las pruebas"
+          git push https://github.com/afdediego/autokatalonpricing.git
