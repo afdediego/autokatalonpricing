@@ -14,22 +14,17 @@ jobs:
       - name: Checkout código fuente
         uses: actions/checkout@v3
 
-      # Paso 2: Conectar a VPN (FortiClient)
-      - name: Conectar a VPN (FortiClient)
-        run: |
-          echo "Conectando a la VPN"
-          fortivpn --server 10.11.12.10 --username ext_adiego@primeit.es --password diego1313
-
-      # Paso 3: Ejecutar Katalon desde la ruta específica
+      # Paso 2: Ejecutar Katalon desde la ruta específica
       - name: Ejecutar pruebas con Katalon
         run: |
+          echo "Asegúrate de que la VPN esté conectada manualmente antes de iniciar el flujo."
           /Applications/Katalon\ Studio\ Free\ Arm64.app/Contents/MacOS/katalon \
           -noSplash -runMode=console \
           -projectPath="$(pwd)/Pricing-Test Plan de Regresión" \
           -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
           -browserType="Chrome (headless)"
 
-      # Paso 4: Subir resultados al repositorio
+      # Paso 3: Subir resultados al repositorio
       - name: Subir resultados
         run: |
           git config --global user.name "afdediego"
