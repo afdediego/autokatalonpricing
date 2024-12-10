@@ -10,17 +10,16 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      # Paso 1: Checkout código fuente
+      # Paso 1: Checkout código fuente desde el repositorio
       - name: Checkout código fuente
         uses: actions/checkout@v3
 
-      # Paso 2: Ejecutar Katalon desde la ruta específica
+      # Paso 2: Ejecutar Katalon desde el repositorio clonado
       - name: Ejecutar pruebas con Katalon
         run: |
-          echo "Asegúrate de que la VPN esté conectada manualmente antes de iniciar el flujo."
           /Applications/Katalon\ Studio\ Free\ Arm64.app/Contents/MacOS/katalon \
           -noSplash -runMode=console \
-          -projectPath="$(pwd)/Pricing-Test Plan de Regresión" \
+          -projectPath="$(pwd)/Pricing-PrimeraPrueba" \
           -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
           -browserType="Chrome (headless)"
 
@@ -28,7 +27,7 @@ jobs:
       - name: Subir resultados
         run: |
           git config --global user.name "afdediego"
-          git config --global user.email "ext_adiego@primeit.es"
+          git config --global user.email "afdediego@gmail.com"
           git add Reports/
           git commit -m "Resultados de las pruebas"
           git push https://github.com/afdediego/autokatalonpricing.git
