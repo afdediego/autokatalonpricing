@@ -7,21 +7,20 @@ on:
 
 jobs:
   run-katalon-tests:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
-      # Paso 1: Checkout del repositorio
+      # Paso 1: Checkout código fuente
       - name: Checkout código fuente
         uses: actions/checkout@v3
 
-      # Paso 2: Ejecutar pruebas con Katalon usando Docker
+      # Paso 2: Ejecutar pruebas con Katalon
       - name: Ejecutar pruebas con Katalon
         run: |
-          docker run --rm -v $(pwd):/katalon/katalon/source:ro \
-          -v $(pwd)/Reports:/katalon/katalon/report \
-          katalonstudio/katalon \
-          katalonc.sh -projectPath="/katalon/katalon/source/Pricing-PrimeraPrueba.prj" \
-          -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core.ts" \
+          /Applications/Katalon\ Studio\ Free\ Arm64.app/Contents/MacOS/katalon \
+          -noSplash -runMode=console \
+          -projectPath="$(pwd)/Pricing-Test Plan de Regresión" \
+          -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
           -browserType="Chrome (headless)"
 
       # Paso 3: Subir resultados al repositorio
