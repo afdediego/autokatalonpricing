@@ -20,7 +20,8 @@ jobs:
           docker run --rm -v $(pwd):/katalon/katalon/source:ro \
           -v $(pwd)/Reports:/katalon/katalon/report \
           katalonstudio/katalon \
-          katalonc.sh -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core.ts" \
+          katalonc.sh -projectPath="/katalon/katalon/source/Pricing-PrimeraPrueba.prj" \
+          -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core.ts" \
           -browserType="Chrome (headless)"
 
       # Paso 3: Subir resultados al repositorio
