@@ -10,36 +10,26 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      # Paso 1: Clonar el repositorio
+      # Paso 1: Checkout código fuente
       - name: Checkout código fuente
         uses: actions/checkout@v3
 
-      # Paso 2: Instalar dependencias necesarias para Katalon
-      - name: Configurar entorno
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y openjdk-11-jdk wget unzip
-
-      # Paso 3: Descargar e instalar Katalon
-      - name: Instalar Katalon
-        run: |
-          wget https://github.com/katalon-studio/katalon-studio/releases/download/v8.6.5/Katalon_Studio_Engine_Linux_64-8.6.5.tar.gz
-          tar -xvzf Katalon_Studio_Engine_Linux_64-8.6.5.tar.gz
-          sudo mv Katalon_Studio_Engine_Linux_64-8.6.5 /opt/katalon
-
-      # Paso 4: Conectar a VPN (FortiClient)
+      # Paso 2: Conectar a VPN (FortiClient)
       - name: Conectar a VPN (FortiClient)
         run: |
           echo "Conectando a la VPN"
           fortivpn --server 10.11.12.10 --username ext_adiego@primeit.es --password diego1313
 
-      # Paso 5: Ejecutar pruebas Katalon
-      - name: Ejecutar pruebas
+      # Paso 3: Ejecutar Katalon desde la ruta específica
+      - name: Ejecutar pruebas con Katalon
         run: |
-          /opt/katalon/katalonc -noSplash -runMode=console -projectPath="$(pwd)" \
-          -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core.ts" -browserType="Chrome (headless)"
+          /Applications/Katalon\ Studio\ Free\ Arm64.app/Contents/MacOS/katalon \
+          -noSplash -runMode=console \
+          -projectPath="$(pwd)/Pricing-Test Plan de Regresión" \
+          -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
+          -browserType="Chrome (headless)"
 
-      # Paso 6: Subir resultados al repositorio
+      # Paso 4: Subir resultados al repositorio
       - name: Subir resultados
         run: |
           git config --global user.name "afdediego"
