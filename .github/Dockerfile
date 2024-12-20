@@ -25,12 +25,11 @@ COPY .github/config.ovpn /etc/openvpn/config.ovpn
 
 # Ejecuta OpenVPN y Katalon al iniciar el contenedor
 CMD openvpn --config /etc/openvpn/config.ovpn & \
-    if [ -f /katalon/katalon/source/Pricing-PrimeraPrueba.prj ]; then \
-        katalon -noSplash -runMode=console \
-        -projectPath=/katalon/katalon/source/Pricing-PrimeraPrueba.prj \
+    if [ -x /usr/bin/katalon ]; then \
+        /usr/bin/katalon -noSplash -runMode=console \
+        -projectPath="/katalon/katalon/source/Pricing-Test Plan de Regresión.prj" \
         -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
         -browserType="Chrome (headless)"; \
     else \
-        echo "Error: El archivo del proyecto no existe"; \
-        exit 1; \
+        echo "Error: Katalon no está instalado correctamente o no es ejecutable" && exit 1; \
     fi
