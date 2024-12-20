@@ -15,7 +15,14 @@ COPY .github/config.ovpn /etc/openvpn/config.ovpn
 
 # Ejecuta OpenVPN al iniciar el contenedor
 CMD openvpn --config /etc/openvpn/config.ovpn & \
-    katalonc.sh -noSplash -runMode=console \
-    -projectPath=/katalon/katalon/source/Pricing-PrimeraPrueba.prj \
-    -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
-    -browserType="Chrome (headless)"
+    sleep 10 && \
+    curl -I http://example.com && \
+    if [ -f /katalon/katalon/source/Pricing-PrimeraPrueba.prj ]; then \
+        katalon -noSplash -runMode=console \
+        -projectPath=/katalon/katalon/source/Pricing-PrimeraPrueba.prj \
+        -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
+        -browserType="Chrome (headless)"; \
+    else \
+        echo "Project file not found"; \
+        exit 1; \
+    fi
