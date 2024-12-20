@@ -15,9 +15,9 @@ RUN wget https://github.com/katalon-studio/katalon-studio/releases/download/v8.5
     rm katalon.tar.gz
 
 # Configura el directorio de trabajo dentro del contenedor
-WORKDIR /katalon/katalon/source
+WORKDIR /katalon/katalon
 
-# Copia los archivos del proyecto al contenedor
+# Copia los archivos del repositorio al contenedor
 COPY . .
 
 # Copia el archivo de configuración de la VPN al contenedor
@@ -25,11 +25,11 @@ COPY .github/config.ovpn /etc/openvpn/config.ovpn
 
 # Ejecuta OpenVPN y Katalon al iniciar el contenedor
 CMD openvpn --config /etc/openvpn/config.ovpn & \
-    if [ -x /usr/bin/katalon ]; then \
-        /usr/bin/katalon -noSplash -runMode=console \
-        -projectPath="/katalon/katalon/source/Pricing-Test Plan de Regresión.prj" \
+    if [ -f /katalon/katalon/Pricing-PrimeraPrueba.prj ]; then \
+        katalon -noSplash -runMode=console \
+        -projectPath="/katalon/katalon/Pricing-PrimeraPrueba.prj" \
         -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
         -browserType="Chrome (headless)"; \
     else \
-        echo "Error: Katalon no está instalado correctamente o no es ejecutable" && exit 1; \
+        echo "Error: El archivo del proyecto no existe en /katalon/katalon/" && exit 1; \
     fi
