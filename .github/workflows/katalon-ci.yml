@@ -2,7 +2,7 @@ name: Ejecutar pruebas Katalon
 
 on:
   schedule:
-    - cron: '0 21 */2 * *' # Cada dos días a las 21:00 (hora UTC)
+    - cron: '0 21 */7 * *' # Cada dos días a las 21:00 (hora UTC)
   workflow_dispatch: # Para permitir ejecución manual
 
 jobs:
