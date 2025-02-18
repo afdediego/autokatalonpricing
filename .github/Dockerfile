@@ -40,6 +40,16 @@ ENV PATH=$JAVA_HOME/bin:$PATH
 ENV DISPLAY=:99
 ENV KATALON_JAVA_OPTS="-Djavax.xml.bind.context.factory=com.sun.xml.bind.v2.ContextFactory -Djava.security.egd=file:/dev/./urandom -Xmx2048m"
 
+# Instala dependencias necesarias para añadir el repositorio de Chrome
+RUN apt-get update && apt-get install -y \
+    wget \
+    gnupg \
+    && rm -rf /var/lib/apt/lists/*
+
+# Añade el repositorio de Google Chrome
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
+    && echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
+
 # Instala Chrome y sus dependencias
 RUN apt-get update && apt-get install -y \
     google-chrome-stable \
@@ -49,7 +59,6 @@ RUN apt-get update && apt-get install -y \
     libgconf-2-4 \
     libappindicator1 \
     libnss3-tools && \
-    # Configuración adicional de Chrome
     mkdir -p /etc/opt/chrome/policies/managed && \
     echo '{ "CommandLineFlagSecurityWarningsEnabled": false }' > /etc/opt/chrome/policies/managed/managed_policies.json
 
