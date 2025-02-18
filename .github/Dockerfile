@@ -13,12 +13,8 @@ RUN apt-get update && apt-get install -y \
     libasound2t64 \
     chromium-browser \
     curl \
-    gpg
-
-# Descarga e instala FortiClient
-RUN wget https://filestore.fortinet.com/forticlient/forticlient_vpn_7.0.0.0018_amd64.deb -O forticlient.deb && \
-    apt-get install -y ./forticlient.deb && \
-    rm forticlient.deb
+    gpg \
+    openvpn
 
 # Descarga e instala Katalon
 RUN wget https://github.com/katalon-studio/katalon-studio/releases/download/v8.5.5/Katalon_Studio_Linux_64-8.5.5.tar.gz -O katalon.tar.gz && \

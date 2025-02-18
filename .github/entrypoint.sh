@@ -1,16 +1,29 @@
 #!/bin/bash
 
-# Configura la VPN usando FortiClient CLI
+# Configura OpenVPN
 echo "Configurando VPN..."
-cat > /tmp/vpn_config.txt << EOF
-set server vpn.recordgo.com:32444
-set username ext_adiego@primeit.es
-set password ${VPN_PASSWORD}
-connect
+cat > /etc/openvpn/client.conf << EOF
+client
+dev tun
+proto tcp
+remote vpn.recordgo.com 32444
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+remote-cert-tls server
+cipher AES-256-CBC
+auth SHA256
+verb 3
+auth-user-pass /etc/openvpn/auth.txt
 EOF
 
-# Inicia la VPN
-forticlientsslvpn_cli --file=/tmp/vpn_config.txt &
+# Configura las credenciales
+echo "ext_adiego@primeit.es" > /etc/openvpn/auth.txt
+echo "${VPN_PASSWORD}" >> /etc/openvpn/auth.txt
+
+# Inicia OpenVPN en segundo plano
+openvpn --config /etc/openvpn/client.conf --daemon
 
 # Espera a que la VPN se establezca
 sleep 10
