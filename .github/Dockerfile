@@ -1,5 +1,5 @@
-# Usa la imagen base oficial de Ubuntu
-FROM ubuntu:latest
+# Usa la imagen base oficial de Ubuntu y especifica la plataforma
+FROM --platform=linux/amd64 ubuntu:latest
 
 # Instala dependencias necesarias
 RUN apt-get update && apt-get install -y \
