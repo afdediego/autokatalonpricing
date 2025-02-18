@@ -32,13 +32,19 @@ sleep 10
 Xvfb :99 -screen 0 1024x768x24 &
 export DISPLAY=:99
 
-# Ejecuta Katalon con más logs
-katalonc -noSplash -runMode=console \
+# Ejecuta Katalon con el comando correcto
+/opt/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc \
+    -noSplash \
+    -runMode=console \
     -projectPath="/katalon/katalon/source/Pricing-PrimeraPrueba.prj" \
+    -retry=0 \
     -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
+    -executionProfile="default" \
     -browserType="Chrome (headless)" \
-    -consoleLog \
-    -logFolder=/katalon/logs 2>&1 | tee /katalon/logs/katalon.log
+    -apiKey="your_api_key" \
+    --config \
+    -proxy.option=NO_PROXY \
+    -webui.autoUpdateDrivers=true
 
 # Si hay error, muestra los logs
 if [ $? -ne 0 ]; then
