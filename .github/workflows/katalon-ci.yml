@@ -7,37 +7,34 @@ on:
 
 jobs:
   run-katalon-tests:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
       # Paso 1: Checkout código fuente
       - name: Checkout código fuente
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
-      # Paso 2: Construir y ejecutar Docker
-      - name: Construir y ejecutar Docker
-        env:
-          DOCKER_BUILDKIT: 1
+      # Paso 2: Verificación del entorno host
+      - name: Verificación del entorno host
         run: |
           echo "=== VERIFICACIÓN DEL ENTORNO HOST ==="
           pwd
           ls -la
-          
+
+      # Paso 3: Construir y ejecutar Docker
+      - name: Construir y ejecutar Docker
+        env:
+          KATALON_API_KEY: ${{ secrets.KATALON_API_KEY }}
+        run: |
           echo "=== CONSTRUYENDO IMAGEN ==="
-          docker build --platform linux/amd64 -t katalon-test -f .github/Dockerfile .
+          docker build -t katalon-test -f .github/Dockerfile .
           
           echo "=== EJECUTANDO CONTENEDOR ==="
           docker run --rm \
-            --platform linux/amd64 \
-            --network=host \
-            --shm-size=4g \
-            -e KATALON_API_KEY=${{ secrets.KATALON_API_KEY }} \
-            -v "${PWD}:/katalon/source" \
-            -v "${PWD}/Reports:/katalon/Reports" \
-            --workdir=/katalon/source \
+            -e KATALON_API_KEY="${KATALON_API_KEY}" \
             katalon-test
 
-      # Paso 3: Subir resultados al repositorio
+      # Paso 4: Subir resultados al repositorio
       - name: Subir resultados
         if: always()
         run: |

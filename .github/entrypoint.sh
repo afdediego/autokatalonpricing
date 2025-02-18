@@ -1,26 +1,43 @@
 #!/bin/bash
-set -x  # Esto mostrará cada comando que se ejecuta
+set -e
 
-echo "=== VERIFICACIÓN DEL ENTORNO ==="
-echo "1. Versión de Java:"
+echo "=== INICIANDO ENTRYPOINT ==="
+
+# Inicia Xvfb
+Xvfb :99 -screen 0 1024x768x24 &
+sleep 3
+
+# Verifica las versiones instaladas
+echo "=== VERSIONES INSTALADAS ==="
+google-chrome --version
+chromedriver --version
 java -version
 
-echo "2. Variables de entorno Java:"
+# Ejecuta las pruebas de Katalon
+echo "=== EJECUTANDO PRUEBAS KATALON ==="
+katalonc \
+    -noSplash \
+    -runMode=console \
+    -projectPath="/katalon/source/Pricing-PrimeraPrueba.prj" \
+    -retry=0 \
+    -testSuitePath="Test Suites/PRICING - Test Suite Prueba" \
+    -browserType="Chrome" \
+    -executionProfile="default" \
+    -apiKey="${KATALON_API_KEY}" \
+    --config \
+    -webui.autoUpdateDrivers=true
+
+echo "=== PRUEBAS COMPLETADAS ==="
+
+echo "=== VERIFICACIÓN DEL ENTORNO ==="
+echo "1. Variables de entorno Java:"
 echo "JAVA_HOME: ${JAVA_HOME}"
 echo "PATH: ${PATH}"
 
-echo "3. Estado de Xvfb:"
-Xvfb :99 -screen 0 1024x768x24 &
-sleep 2
+echo "2. Estado de Xvfb:"
 ps aux | grep Xvfb
 
-echo "4. Versión de Chrome:"
-google-chrome --version
-
-echo "5. Versión de ChromeDriver:"
-chromedriver --version
-
-echo "6. Verificación de Katalon:"
+echo "3. Verificación de Katalon:"
 echo "Permisos del ejecutable:"
 ls -l /opt/katalon/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc
 echo "Tipo de archivo:"
@@ -28,7 +45,7 @@ file /opt/katalon/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc
 echo "Contenido del directorio Katalon:"
 find /opt/katalon -type f -ls
 
-echo "7. Verificación del proyecto:"
+echo "4. Verificación del proyecto:"
 echo "Contenido del directorio actual:"
 pwd
 ls -la .
@@ -62,28 +79,6 @@ ls -la /opt/katalon/Katalon_Studio_Engine_Linux_64-8.5.5/
 export CHROME_BIN=/usr/bin/google-chrome
 export CHROME_PATH=/usr/bin/google-chrome
 export DISPLAY=:99
-
-# Ejecuta Katalon con el comando correcto
-/opt/katalon/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc \
-    -noSplash \
-    -runMode=console \
-    -projectPath="./Pricing-PrimeraPrueba.prj" \
-    -retry=0 \
-    -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
-    -executionProfile="default" \
-    -browserType="Chrome" \
-    -apiKey="${KATALON_API_KEY}" \
-    --config \
-    -proxy.option=NO_PROXY \
-    -webui.autoUpdateDrivers=true \
-    -webui.chromeSwitches="--no-sandbox --disable-dev-shm-usage --headless=new --disable-gpu --window-size=1920,1080 --remote-debugging-port=9222"
-
-# Si hay error, muestra los logs
-if [ $? -ne 0 ]; then
-    echo "Error en la ejecución. Mostrando logs:"
-    cat /katalon/logs/katalon.log
-    cat /opt/katalon/configuration/*.log
-fi
 
 # Muestra información de depuración
 echo "Contenido del directorio actual:"
