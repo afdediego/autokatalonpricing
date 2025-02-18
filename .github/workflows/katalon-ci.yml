@@ -14,26 +14,15 @@ jobs:
       - name: Checkout código fuente
         uses: actions/checkout@v3
 
-      # Paso 2: Configurar VPN
-      - name: Configurar VPN
+      # Paso 2: Construir y ejecutar Docker
+      - name: Construir y ejecutar Docker
         run: |
-          sudo apt-get update
-          sudo apt-get install -y openvpn
-          sudo openvpn --config .github/vpn-config.ovpn --auth-user-pass .github/auth.txt --daemon
-        env:
-          OVPN_CONFIG: .github/vpn-config.ovpn
-          OVPN_AUTH: .github/auth.txt
-
-      # Paso 3: Descargar y ejecutar Katalon en Docker
-      - name: Descargar y ejecutar Katalon
-        run: |
+          docker build -t katalon-test -f .github/Dockerfile .
           docker run --rm \
-          -v $(pwd):/katalon/katalon/source:ro \
-          katalonstudio/katalon \
-          katalon -noSplash -runMode=console \
-          -projectPath="/katalon/katalon/source/Pricing-Test Plan de Regresión" \
-          -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
-          -browserType="Chrome (headless)"
+            --privileged \
+            -e VPN_PASSWORD=${{ secrets.VPN_PASSWORD }} \
+            -v $(pwd):/katalon/katalon/source \
+            katalon-test
 
       # Paso 4: Subir resultados al repositorio
       - name: Subir resultados

@@ -6,29 +6,37 @@ RUN apt-get update && apt-get install -y \
     openjdk-11-jdk \
     wget \
     unzip \
-    openvpn
+    xvfb \
+    libgbm1 \
+    libnss3 \
+    libxss1 \
+    libasound2 \
+    chromium-browser \
+    curl \
+    gpg
+
+# Añade el repositorio de FortiClient
+RUN curl -s https://repo.fortinet.com/repo/ubuntu/DEB-GPG-KEY | gpg --dearmor > /usr/share/keyrings/fortinet-archive-keyring.gpg
+RUN echo "deb [arch=amd64 signed-by=/usr/share/keyrings/fortinet-archive-keyring.gpg] https://repo.fortinet.com/repo/ubuntu/ focal multiverse" | tee /etc/apt/sources.list.d/fortinet.list
+
+# Instala FortiClient
+RUN apt-get update && apt-get install -y forticlient
 
 # Descarga e instala Katalon
 RUN wget https://github.com/katalon-studio/katalon-studio/releases/download/v8.5.5/Katalon_Studio_Linux_64-8.5.5.tar.gz -O katalon.tar.gz && \
     tar -xzvf katalon.tar.gz -C /opt/ && \
-    ln -s /opt/Katalon_Studio_Linux_64-8.5.5/katalonc /usr/bin/katalon
+    chmod +x /opt/Katalon_Studio_Linux_64-8.5.5/katalonc && \
+    ln -s /opt/Katalon_Studio_Linux_64-8.5.5/katalonc /usr/local/bin/katalon
 
-# Configura el directorio de trabajo dentro del contenedor
+# Configura el directorio de trabajo
 WORKDIR /katalon/katalon
 
-# Copia los archivos del proyecto al contenedor
+# Copia los archivos del proyecto
 COPY . .
 
-# Verifica y ajusta la ubicación del archivo .prj
-RUN mkdir -p /katalon/katalon/source && \
-    mv /katalon/katalon/Pricing-PrimeraPrueba.prj /katalon/katalon/source/
+# Crea el script de entrada
+COPY .github/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-# Copia el archivo de configuración de la VPN al contenedor
-COPY .github/config.ovpn /etc/openvpn/config.ovpn
-
-# Ejecuta OpenVPN y Katalon al iniciar el contenedor
-CMD openvpn --config /etc/openvpn/config.ovpn & \
-    katalon -noSplash -runMode=console \
-    -projectPath="/katalon/katalon/source/Pricing-PrimeraPrueba.prj" \
-    -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
-    -browserType="Chrome (headless)"
+# Usa el script de entrada como punto de entrada
+ENTRYPOINT ["/entrypoint.sh"]
