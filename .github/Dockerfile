@@ -23,6 +23,9 @@ RUN wget https://github.com/katalon-studio/katalon-studio/releases/download/v8.5
     ln -s /opt/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc /usr/local/bin/katalonc && \
     rm katalon.tar.gz
 
+# Crea directorio para logs
+RUN mkdir -p /katalon/logs && chmod 777 /katalon/logs
+
 # Configura el directorio de trabajo
 WORKDIR /katalon/katalon
 

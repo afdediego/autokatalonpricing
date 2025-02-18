@@ -32,8 +32,17 @@ sleep 10
 Xvfb :99 -screen 0 1024x768x24 &
 export DISPLAY=:99
 
-# Ejecuta Katalon
+# Ejecuta Katalon con más logs
 katalonc -noSplash -runMode=console \
     -projectPath="/katalon/katalon/source/Pricing-PrimeraPrueba.prj" \
     -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
-    -browserType="Chrome (headless)" 
+    -browserType="Chrome (headless)" \
+    -consoleLog \
+    -logFolder=/katalon/logs 2>&1 | tee /katalon/logs/katalon.log
+
+# Si hay error, muestra los logs
+if [ $? -ne 0 ]; then
+    echo "Error en la ejecución. Mostrando logs:"
+    cat /katalon/logs/katalon.log
+    cat /opt/Katalon_Studio_Engine_Linux_64-8.5.5/configuration/*.log
+fi 
