@@ -41,7 +41,9 @@ echo "VPN_PASSWORD está definido: ${VPN_PASSWORD:+true}"
 echo "KATALON_API_KEY está definido: ${KATALON_API_KEY:+true}"
 
 # Ejecuta Katalon con el comando correcto y las variables de entorno de Java
-JAVA_OPTS="${KATALON_JAVA_OPTS}" /opt/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc \
+JAVA_OPTS="${KATALON_JAVA_OPTS} -Djava.awt.headless=true -Dfile.encoding=UTF-8" \
+DISPLAY=:99 \
+/opt/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc \
     -noSplash \
     -runMode=console \
     -projectPath="/katalon/katalon/source/Pricing-PrimeraPrueba.prj" \

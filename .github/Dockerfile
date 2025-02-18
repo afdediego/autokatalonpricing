@@ -3,7 +3,7 @@ FROM --platform=linux/amd64 ubuntu:latest
 
 # Instala dependencias necesarias
 RUN apt-get update && apt-get install -y \
-    openjdk-11-jdk \
+    openjdk-8-jdk \
     wget \
     unzip \
     xvfb \
@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
     glassfish-jaxb-api
 
 # Configura JAVA_HOME y otras variables de entorno
-ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV PATH=$JAVA_HOME/bin:$PATH
 ENV KATALON_JAVA_OPTS="-Djavax.xml.bind.context.factory=com.sun.xml.bind.v2.ContextFactory"
 
