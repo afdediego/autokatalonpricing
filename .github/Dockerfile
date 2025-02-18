@@ -19,8 +19,9 @@ RUN apt-get update && apt-get install -y \
 # Descarga e instala Katalon
 RUN wget https://github.com/katalon-studio/katalon-studio/releases/download/v8.5.5/Katalon_Studio_Linux_64-8.5.5.tar.gz -O katalon.tar.gz && \
     tar -xzvf katalon.tar.gz -C /opt/ && \
-    chmod +x /opt/Katalon_Studio_Linux_64-8.5.5/katalonc && \
-    ln -s /opt/Katalon_Studio_Linux_64-8.5.5/katalonc /usr/local/bin/katalon
+    chmod +x /opt/Katalon_Studio_Linux_64-8.5.5/katalon && \
+    ln -s /opt/Katalon_Studio_Linux_64-8.5.5/katalon /usr/local/bin/katalon && \
+    rm katalon.tar.gz
 
 # Configura el directorio de trabajo
 WORKDIR /katalon/katalon
