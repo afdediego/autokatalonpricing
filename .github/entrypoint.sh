@@ -33,7 +33,7 @@ Xvfb :99 -screen 0 1024x768x24 &
 export DISPLAY=:99
 
 # Ejecuta Katalon
-katalon -noSplash -runMode=console \
+katalonc -noSplash -runMode=console \
     -projectPath="/katalon/katalon/source/Pricing-PrimeraPrueba.prj" \
     -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
     -browserType="Chrome (headless)" 
