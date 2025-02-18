@@ -25,7 +25,11 @@ katalonc \
     -executionProfile="default" \
     -apiKey="${KATALON_API_KEY}" \
     --config \
-    -webui.autoUpdateDrivers=true
+    -webui.autoUpdateDrivers=true \
+    -webui.chromeSwitches="--no-sandbox --disable-dev-shm-usage --headless=new --disable-gpu --window-size=1920,1080 --disable-extensions --disable-software-rasterizer --disable-popup-blocking --disable-default-apps --no-first-run" \
+    -webui.timeoutDefault=30 \
+    -webui.waitForIEHanging=5 \
+    -webui.pageLoadTimeout=30
 
 echo "=== PRUEBAS COMPLETADAS ==="
 

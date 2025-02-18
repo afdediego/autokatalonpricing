@@ -8,6 +8,7 @@ on:
 jobs:
   run-katalon-tests:
     runs-on: ubuntu-latest
+    timeout-minutes: 120  # Limita la ejecución a 2 horas máximo
 
     steps:
       # Paso 1: Checkout código fuente
@@ -31,6 +32,7 @@ jobs:
           
           echo "=== EJECUTANDO CONTENEDOR ==="
           docker run --rm \
+            --shm-size=2g \
             -e KATALON_API_KEY="${KATALON_API_KEY}" \
             katalon-test
 
