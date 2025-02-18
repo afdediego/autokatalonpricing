@@ -19,24 +19,30 @@ jobs:
         env:
           DOCKER_BUILDKIT: 1
         run: |
+          echo "=== VERIFICACIÓN DEL ENTORNO HOST ==="
+          pwd
+          ls -la
+          
+          echo "=== CONSTRUYENDO IMAGEN ==="
           docker build --platform linux/amd64 -t katalon-test -f .github/Dockerfile .
+          
+          echo "=== EJECUTANDO CONTENEDOR ==="
           docker run --rm \
             --platform linux/amd64 \
-            --privileged \
-            --cap-add=NET_ADMIN \
-            --device=/dev/net/tun \
-            -e VPN_PASSWORD=${{ secrets.VPN_PASSWORD }} \
+            --network=host \
+            --shm-size=4g \
             -e KATALON_API_KEY=${{ secrets.KATALON_API_KEY }} \
-            -v $(pwd):/katalon/katalon/source \
-            -v $(pwd)/Reports:/katalon/katalon/Reports \
+            -v "${PWD}:/katalon/source" \
+            -v "${PWD}/Reports:/katalon/Reports" \
+            --workdir=/katalon/source \
             katalon-test
 
       # Paso 3: Subir resultados al repositorio
       - name: Subir resultados
-        if: always()  # Ejecutar incluso si los tests fallan
+        if: always()
         run: |
           git config --global user.name "afdediego"
           git config --global user.email "afdediego@gmail.com"
-          git add Reports/
+          git add -f Reports/
           git commit -m "Resultados de las pruebas [skip ci]" || echo "No hay cambios que commitear"
           git push || echo "No hay cambios que pushear"
