@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x  # Esto mostrará cada comando que se ejecuta
 
 # Configura OpenVPN
 echo "Configurando VPN..."
@@ -32,8 +33,15 @@ sleep 10
 Xvfb :99 -screen 0 1024x768x24 &
 export DISPLAY=:99
 
-# Ejecuta Katalon con el comando correcto
-/opt/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc \
+# Verifica la existencia del archivo .prj
+ls -la /katalon/katalon/source/
+
+# Verifica las variables de entorno (ocultando valores sensibles)
+echo "VPN_PASSWORD está definido: ${VPN_PASSWORD:+true}"
+echo "KATALON_API_KEY está definido: ${KATALON_API_KEY:+true}"
+
+# Ejecuta Katalon con el comando correcto y las variables de entorno de Java
+JAVA_OPTS="${KATALON_JAVA_OPTS}" /opt/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc \
     -noSplash \
     -runMode=console \
     -projectPath="/katalon/katalon/source/Pricing-PrimeraPrueba.prj" \
@@ -41,7 +49,7 @@ export DISPLAY=:99
     -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
     -executionProfile="default" \
     -browserType="Chrome (headless)" \
-    -apiKey="your_api_key" \
+    -apiKey="${KATALON_API_KEY}" \
     --config \
     -proxy.option=NO_PROXY \
     -webui.autoUpdateDrivers=true
