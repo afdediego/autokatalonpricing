@@ -31,7 +31,6 @@ sleep 10
 
 # Inicia Xvfb en segundo plano
 Xvfb :99 -screen 0 1024x768x24 &
-export DISPLAY=:99
 
 # Verifica la existencia del archivo .prj
 ls -la /katalon/katalon/source/

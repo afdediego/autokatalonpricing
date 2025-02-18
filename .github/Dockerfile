@@ -1,12 +1,11 @@
-# Usa la imagen base oficial de Ubuntu y especifica la plataforma
-FROM --platform=linux/amd64 ubuntu:20.04
+# Usa la imagen base de Eclipse Temurin 8
+FROM --platform=linux/amd64 eclipse-temurin:8-jdk
 
 # Evita preguntas durante la instalación
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Instala dependencias necesarias
 RUN apt-get update && apt-get install -y \
-    openjdk-8-jdk \
     wget \
     unzip \
     xvfb \
@@ -14,18 +13,14 @@ RUN apt-get update && apt-get install -y \
     libnss3 \
     libxss1 \
     libasound2 \
-    chromium-browser \
+    chromium \
     curl \
     gpg \
-    openvpn \
-    libxml-commons-external-java \
-    libjaxb-api-java \
-    libjavax-activation-java
+    openvpn
 
-# Configura JAVA_HOME y otras variables de entorno
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-ENV PATH=$JAVA_HOME/bin:$PATH
-ENV KATALON_JAVA_OPTS="-Djavax.xml.bind.context.factory=com.sun.xml.bind.v2.ContextFactory -Djava.security.egd=file:/dev/./urandom"
+# Configura variables de entorno
+ENV DISPLAY=:99
+ENV KATALON_JAVA_OPTS="-Djavax.xml.bind.context.factory=com.sun.xml.bind.v2.ContextFactory -Djava.security.egd=file:/dev/./urandom -Xmx2048m"
 
 # Descarga e instala Katalon Runtime Engine (versión 7.5.5)
 RUN wget https://github.com/katalon-studio/katalon-studio/releases/download/v7.5.5/Katalon_Studio_Engine_Linux_64-7.5.5.tar.gz -O katalon.tar.gz && \
