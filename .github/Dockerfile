@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     libgbm1 \
     libnss3 \
     libxss1 \
-    libasound2 \
+    libasound2t64 \
     chromium-browser \
     curl \
     gpg
