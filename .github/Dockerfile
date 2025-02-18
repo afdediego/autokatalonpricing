@@ -1,5 +1,8 @@
 # Usa la imagen base oficial de Ubuntu y especifica la plataforma
-FROM --platform=linux/amd64 ubuntu:latest
+FROM --platform=linux/amd64 ubuntu:20.04
+
+# Evita preguntas durante la instalación
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Instala dependencias necesarias
 RUN apt-get update && apt-get install -y \
@@ -10,27 +13,25 @@ RUN apt-get update && apt-get install -y \
     libgbm1 \
     libnss3 \
     libxss1 \
-    libasound2t64 \
+    libasound2 \
     chromium-browser \
     curl \
     gpg \
     openvpn \
     libxml-commons-external-java \
     libjaxb-api-java \
-    libjavax-activation-java \
-    jaxb-impl \
-    glassfish-jaxb-api
+    libjavax-activation-java
 
 # Configura JAVA_HOME y otras variables de entorno
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV PATH=$JAVA_HOME/bin:$PATH
-ENV KATALON_JAVA_OPTS="-Djavax.xml.bind.context.factory=com.sun.xml.bind.v2.ContextFactory"
+ENV KATALON_JAVA_OPTS="-Djavax.xml.bind.context.factory=com.sun.xml.bind.v2.ContextFactory -Djava.security.egd=file:/dev/./urandom"
 
-# Descarga e instala Katalon Runtime Engine
-RUN wget https://github.com/katalon-studio/katalon-studio/releases/download/v8.5.5/Katalon_Studio_Engine_Linux_64-8.5.5.tar.gz -O katalon.tar.gz && \
+# Descarga e instala Katalon Runtime Engine (versión 7.5.5)
+RUN wget https://github.com/katalon-studio/katalon-studio/releases/download/v7.5.5/Katalon_Studio_Engine_Linux_64-7.5.5.tar.gz -O katalon.tar.gz && \
     tar -xzvf katalon.tar.gz -C /opt/ && \
-    chmod +x /opt/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc && \
-    ln -s /opt/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc /usr/local/bin/katalonc && \
+    chmod +x /opt/Katalon_Studio_Engine_Linux_64-7.5.5/katalonc && \
+    ln -s /opt/Katalon_Studio_Engine_Linux_64-7.5.5/katalonc /usr/local/bin/katalonc && \
     rm katalon.tar.gz
 
 # Crea directorio para logs

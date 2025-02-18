@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-katalon-tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04  # Cambiado a ubuntu-20.04 para coincidir con el Dockerfile
 
     steps:
       # Paso 1: Checkout código fuente
@@ -16,19 +16,25 @@ jobs:
 
       # Paso 2: Construir y ejecutar Docker
       - name: Construir y ejecutar Docker
+        env:
+          DOCKER_BUILDKIT: 1
         run: |
-          docker build -t katalon-test -f .github/Dockerfile .
+          docker build --platform linux/amd64 -t katalon-test -f .github/Dockerfile .
           docker run --rm \
+            --platform linux/amd64 \
             --privileged \
             -e VPN_PASSWORD=${{ secrets.VPN_PASSWORD }} \
+            -e KATALON_API_KEY=${{ secrets.KATALON_API_KEY }} \
             -v $(pwd):/katalon/katalon/source \
+            -v $(pwd)/Reports:/katalon/katalon/Reports \
             katalon-test
 
-      # Paso 4: Subir resultados al repositorio
+      # Paso 3: Subir resultados al repositorio
       - name: Subir resultados
+        if: always()  # Ejecutar incluso si los tests fallan
         run: |
           git config --global user.name "afdediego"
           git config --global user.email "afdediego@gmail.com"
           git add Reports/
-          git commit -m "Resultados de las pruebas"
-          git push
+          git commit -m "Resultados de las pruebas [skip ci]" || echo "No hay cambios que commitear"
+          git push || echo "No hay cambios que pushear"
