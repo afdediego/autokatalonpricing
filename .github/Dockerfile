@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y \
     sudo \
     libxml-commons-external-java \
     libjaxb-api-java \
-    libjavax-activation-java \
     libnss3-tools \
     libatk1.0-0 \
     libatk-bridge2.0-0 \

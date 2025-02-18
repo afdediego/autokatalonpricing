@@ -2,7 +2,7 @@
 
 bin
 
-Reports
+!Reports/
 
 Libs
 
@@ -13,4 +13,5 @@ build
 
 .classpath
 
-.project
+.projectlogs/
+bin/
