@@ -2,12 +2,12 @@ name: Ejecutar pruebas Katalon
 
 on:
   schedule:
-    - cron: '0 21 */7 * *' # Cada dos días a las 21:00 (hora UTC)
+    - cron: '0 21 */7 * *' # Cada 7 días a las 21:00 (hora UTC)
   workflow_dispatch: # Para permitir ejecución manual
 
 jobs:
   run-katalon-tests:
-    runs-on: ubuntu-20.04  # Cambiado a ubuntu-20.04 para coincidir con el Dockerfile
+    runs-on: ubuntu-20.04
 
     steps:
       # Paso 1: Checkout código fuente
@@ -23,6 +23,8 @@ jobs:
           docker run --rm \
             --platform linux/amd64 \
             --privileged \
+            --cap-add=NET_ADMIN \
+            --device=/dev/net/tun \
             -e VPN_PASSWORD=${{ secrets.VPN_PASSWORD }} \
             -e KATALON_API_KEY=${{ secrets.KATALON_API_KEY }} \
             -v $(pwd):/katalon/katalon/source \

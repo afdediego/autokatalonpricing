@@ -1,50 +1,28 @@
 #!/bin/bash
 set -x  # Esto mostrará cada comando que se ejecuta
 
-# Configura OpenVPN
-echo "Configurando VPN..."
-cat > /etc/openvpn/client.conf << EOF
-client
-dev tun
-proto tcp
-remote vpn.recordgo.com 32444
-resolv-retry infinite
-nobind
-persist-key
-persist-tun
-remote-cert-tls server
-cipher AES-256-CBC
-auth SHA256
-verb 3
-auth-user-pass /etc/openvpn/auth.txt
-EOF
-
-# Configura las credenciales
-echo "ext_adiego@primeit.es" > /etc/openvpn/auth.txt
-echo "${VPN_PASSWORD}" >> /etc/openvpn/auth.txt
-
-# Inicia OpenVPN en segundo plano
-openvpn --config /etc/openvpn/client.conf --daemon
-
-# Espera a que la VPN se establezca
-sleep 10
-
-# Inicia Xvfb en segundo plano
+# Inicia Xvfb en segundo plano y espera a que esté listo
 Xvfb :99 -screen 0 1024x768x24 &
+sleep 2
 
 # Verifica la existencia del archivo .prj
-ls -la /katalon/katalon/source/
+ls -la /katalon/source/
 
-# Verifica las variables de entorno (ocultando valores sensibles)
-echo "VPN_PASSWORD está definido: ${VPN_PASSWORD:+true}"
+# Verifica las variables de entorno
 echo "KATALON_API_KEY está definido: ${KATALON_API_KEY:+true}"
 
-# Ejecuta Katalon con el comando correcto y las variables de entorno de Java
-JAVA_OPTS="${KATALON_JAVA_OPTS}" \
-/opt/Katalon_Studio_Engine_Linux_64-7.5.5/katalonc \
+# Verifica qué directorio existe
+if [ -d "/katalon/source/autokatalonpricing-main" ]; then
+    PROJECT_DIR="/katalon/source/autokatalonpricing-main"
+else
+    PROJECT_DIR="/katalon/source/autokatalonpricing"
+fi
+
+# Ejecuta Katalon con el comando correcto
+/opt/katalon/Katalon_Studio_Engine_Linux_64-8.5.5/katalonc \
     -noSplash \
     -runMode=console \
-    -projectPath="/katalon/katalon/source/Pricing-PrimeraPrueba.prj" \
+    -projectPath="${PROJECT_DIR}/Pricing-PrimeraPrueba.prj" \
     -retry=0 \
     -testSuitePath="Test Suites/PRICING-Test Plan Regresión Core" \
     -executionProfile="default" \
@@ -52,11 +30,12 @@ JAVA_OPTS="${KATALON_JAVA_OPTS}" \
     -apiKey="${KATALON_API_KEY}" \
     --config \
     -proxy.option=NO_PROXY \
-    -webui.autoUpdateDrivers=true
+    -webui.autoUpdateDrivers=true \
+    -webui.chromeSwitches="--no-sandbox --disable-dev-shm-usage --headless --disable-gpu"
 
 # Si hay error, muestra los logs
 if [ $? -ne 0 ]; then
     echo "Error en la ejecución. Mostrando logs:"
     cat /katalon/logs/katalon.log
-    cat /opt/Katalon_Studio_Engine_Linux_64-7.5.5/configuration/*.log
+    cat /opt/katalon/configuration/*.log
 fi 
