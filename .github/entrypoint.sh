@@ -25,11 +25,20 @@ katalonc \
     -executionProfile="default" \
     -apiKey="${KATALON_API_KEY}" \
     --config \
-    -webui.autoUpdateDrivers=true \
-    -webui.chromeSwitches="--no-sandbox --disable-dev-shm-usage --headless=new --disable-gpu --window-size=1920,1080 --disable-extensions --disable-software-rasterizer --disable-popup-blocking --disable-default-apps --no-first-run" \
-    -webui.timeoutDefault=30 \
+    -webui.autoUpdateDrivers=false \
+    -webui.chromeSwitches="--no-sandbox --disable-dev-shm-usage --headless=new --disable-gpu --window-size=1920,1080 --disable-extensions --disable-software-rasterizer --disable-popup-blocking --disable-default-apps --no-first-run --aggressive-cache-discard --disable-cache --disable-application-cache --disable-offline-load-stale-cache --disk-cache-size=0 --disable-background-networking --disable-sync --disable-translate --hide-scrollbars --metrics-recording-only --mute-audio --no-first-run --safebrowsing-disable-auto-update --ignore-certificate-errors --ignore-ssl-errors --ignore-certificate-errors-spki-list --disable-dev-tools" \
+    -webui.timeoutDefault=15 \
     -webui.waitForIEHanging=5 \
-    -webui.pageLoadTimeout=30
+    -webui.pageLoadTimeout=30 \
+    -webui.delay=0 \
+    -webui.actionDelay=0 \
+    -webui.batchSize=20 \
+    -webui.maxFailedTestSteps=100 \
+    -webui.skipExecutingTestStepPassed=true \
+    -webui.smartWaitMode=true \
+    -webui.selfHealingEnabled=false \
+    -webui.useActionDelayInSecond=false \
+    -webui.maximizeWindow=false
 
 echo "=== PRUEBAS COMPLETADAS ==="
 

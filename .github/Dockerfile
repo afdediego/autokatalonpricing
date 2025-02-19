@@ -32,13 +32,16 @@ RUN apt-get update && apt-get install -y \
     libgbm1 \
     libasound2 \
     libgconf-2-4 \
-    libappindicator1
+    libappindicator1 \
+    --no-install-recommends \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Configura variables de entorno
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ENV PATH=$JAVA_HOME/bin:$PATH
 ENV DISPLAY=:99
-ENV KATALON_JAVA_OPTS="-Djavax.xml.bind.context.factory=com.sun.xml.bind.v2.ContextFactory -Djava.security.egd=file:/dev/./urandom -Xmx2048m"
+ENV KATALON_JAVA_OPTS="-Djavax.xml.bind.context.factory=com.sun.xml.bind.v2.ContextFactory -Djava.security.egd=file:/dev/./urandom -Xmx2048m -XX:+UseG1GC -XX:+UseStringDeduplication -XX:+OptimizeStringConcat"
 
 # Instala dependencias necesarias para añadir el repositorio de Chrome
 RUN apt-get update && apt-get install -y \
