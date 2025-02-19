@@ -6,7 +6,3 @@ Screenshots/
 settings/
 *.class
 *.log
-logs/
-bin/
-Reports/
-.DS_Store
