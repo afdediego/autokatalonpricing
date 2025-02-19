@@ -21,7 +21,7 @@ katalonc \
     -projectPath="/katalon/source/Pricing-PrimeraPrueba.prj" \
     -retry=0 \
     -testSuiteTimeout=1800 \
-    -testSuitePath="Test Suites/PRICING - Test Suite Prueba" \
+    -testSuitePath="Test Suites/PRICING - Test Suite Prueba Reducida" \
     -browserType="Chrome" \
     -executionProfile="default" \
     -apiKey="${KATALON_API_KEY}" \
