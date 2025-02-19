@@ -1,4 +1,4 @@
-logs/
+.gradle/
 bin/
 Reports/
 .DS_Store
@@ -6,3 +6,6 @@ Screenshots/
 settings/
 *.class
 *.log
+Libs/
+Object Repository/
+Include/
