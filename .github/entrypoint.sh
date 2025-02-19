@@ -20,27 +20,57 @@ katalonc \
     -runMode=console \
     -projectPath="/katalon/source/Pricing-PrimeraPrueba.prj" \
     -retry=0 \
+    -testSuiteTimeout=1800 \
     -testSuitePath="Test Suites/PRICING - Test Suite Prueba" \
     -browserType="Chrome" \
     -executionProfile="default" \
     -apiKey="${KATALON_API_KEY}" \
+    -reportFolder="/katalon/source/Reports" \
+    -reportFileName="katalon-results" \
     --config \
     -webui.autoUpdateDrivers=false \
-    -webui.chromeSwitches="--no-sandbox --disable-dev-shm-usage --headless=new --disable-gpu --window-size=1920,1080 --disable-extensions --disable-software-rasterizer --disable-popup-blocking --disable-default-apps --no-first-run --aggressive-cache-discard --disable-cache --disable-application-cache --disable-offline-load-stale-cache --disk-cache-size=0 --disable-background-networking --disable-sync --disable-translate --hide-scrollbars --metrics-recording-only --mute-audio --no-first-run --safebrowsing-disable-auto-update --ignore-certificate-errors --ignore-ssl-errors --ignore-certificate-errors-spki-list --disable-dev-tools" \
-    -webui.timeoutDefault=15 \
-    -webui.waitForIEHanging=5 \
-    -webui.pageLoadTimeout=30 \
+    -webui.chromeSwitches="--no-sandbox --disable-dev-shm-usage --headless=new --disable-gpu --window-size=1024,768 --disable-extensions --disable-software-rasterizer --disable-popup-blocking --disable-default-apps --no-first-run --aggressive-cache-discard --disable-cache --disable-application-cache --disable-offline-load-stale-cache --disk-cache-size=0 --disable-background-networking --disable-sync --disable-translate --hide-scrollbars --metrics-recording-only --mute-audio --no-first-run --safebrowsing-disable-auto-update --ignore-certificate-errors --ignore-ssl-errors --ignore-certificate-errors-spki-list --disable-dev-tools --js-flags=--max-old-space-size=4096" \
+    -webui.timeoutDefault=10 \
+    -webui.waitForIEHanging=2 \
+    -webui.pageLoadTimeout=20 \
     -webui.delay=0 \
     -webui.actionDelay=0 \
-    -webui.batchSize=20 \
+    -webui.batchSize=50 \
+    -webui.concurrentInstances=4 \
     -webui.maxFailedTestSteps=100 \
     -webui.skipExecutingTestStepPassed=true \
     -webui.smartWaitMode=true \
     -webui.selfHealingEnabled=false \
     -webui.useActionDelayInSecond=false \
-    -webui.maximizeWindow=false
+    -webui.maximizeWindow=false \
+    -webui.execution.defaultFailureHandling="CONTINUE_ON_FAILURE" \
+    -webui.continueOnFailure=true \
+    -webui.stopTestSuiteIfFailing=false \
+    -webui.abortTestSuiteOnFailure=false \
+    -webui.continueOnStepFailure=true \
+    -webui.timeout.pageLoad=10 \
+    -webui.timeout.element=5 \
+    -webui.timeout.script=5
 
 echo "=== PRUEBAS COMPLETADAS ==="
+
+# Generar resumen de pruebas
+echo "=== RESUMEN DE EJECUCIÓN ==="
+if [ -d "/katalon/source/Reports" ]; then
+    echo "Tests fallidos:"
+    find /katalon/source/Reports -name "*.xml" -type f -exec grep -l "<failure" {} \; | while read file; do
+        testcase=$(grep "<testcase" "$file" | head -1)
+        echo "- ${testcase#*name=\"}"
+    done
+    
+    total_tests=$(find /katalon/source/Reports -name "*.xml" -type f -exec grep "<testcase" {} \; | wc -l)
+    failed_tests=$(find /katalon/source/Reports -name "*.xml" -type f -exec grep "<failure" {} \; | wc -l)
+    passed_tests=$((total_tests - failed_tests))
+    
+    echo "Total de pruebas ejecutadas: $total_tests"
+    echo "Pruebas exitosas: $passed_tests"
+    echo "Pruebas fallidas: $failed_tests"
+fi
 
 echo "=== VERIFICACIÓN DEL ENTORNO ==="
 echo "1. Variables de entorno Java:"

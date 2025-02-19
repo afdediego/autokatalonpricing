@@ -8,7 +8,7 @@ on:
 jobs:
   run-katalon-tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 75  # 1 hora y 15 minutos máximo
+    timeout-minutes: 50
 
     steps:
       # Paso 1: Checkout código fuente
@@ -32,12 +32,16 @@ jobs:
           
           echo "=== EJECUTANDO CONTENEDOR ==="
           docker run --rm \
+            --network=host \
             --shm-size=2g \
-            --memory=4g \
-            --memory-swap=8g \
-            --cpus=2 \
+            --memory=6g \
+            --memory-swap=12g \
+            --cpus=4 \
+            --ulimit nofile=65535:65535 \
             -e KATALON_API_KEY="${KATALON_API_KEY}" \
-            -e JAVA_OPTS="-Xmx2048m -XX:MaxPermSize=512m -XX:+UseG1GC -XX:+UseStringDeduplication" \
+            -e JAVA_OPTS="-Xmx4096m -XX:MaxPermSize=1024m -XX:+UseG1GC -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -XX:+TieredCompilation -XX:+UseNUMA" \
+            -e KATALON_OPTS="--config -webui.autoRetry=false -webui.stopOnFailure=false" \
+            -v $(pwd)/Reports:/katalon/source/Reports \
             katalon-test
 
       # Paso 4: Subir resultados al repositorio
@@ -49,3 +53,23 @@ jobs:
           git add -f Reports/
           git commit -m "Resultados de las pruebas [skip ci]" || echo "No hay cambios que commitear"
           git push || echo "No hay cambios que pushear"
+
+      - name: Analizar resultados de las pruebas
+        if: always()
+        run: |
+          echo "=== RESUMEN DE PRUEBAS FALLIDAS ==="
+          if [ -d "Reports" ]; then
+            echo "Analizando reportes JUnit..."
+            find Reports -name "*.xml" -type f -exec grep -l "<failure" {} \; | while read file; do
+              echo "Test fallido encontrado en: $file"
+              grep -A 2 "<failure" "$file" | grep "message" || true
+            done
+            
+            echo "Conteo total de pruebas:"
+            find Reports -name "*.xml" -type f -exec grep "<testcase" {} \; | wc -l
+            
+            echo "Conteo de pruebas fallidas:"
+            find Reports -name "*.xml" -type f -exec grep "<failure" {} \; | wc -l
+          else
+            echo "No se encontró el directorio de reportes"
+          fi
