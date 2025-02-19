@@ -8,7 +8,7 @@ on:
 jobs:
   run-katalon-tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
 
     steps:
       # Paso 1: Checkout código fuente
